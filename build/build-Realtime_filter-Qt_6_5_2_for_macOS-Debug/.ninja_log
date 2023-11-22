@@ -1,0 +1,9 @@
+# ninja log v5
+0	589	1700611430550243463	/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/Realtime_filter_autogen/mocs_compilation.cpp	bdc6378fc934e34a
+589	1267	1700611431230462568	CMakeFiles/Realtime_filter.dir/main.cpp.o	cf6a42938a1a9bd0
+589	1269	1700611431230855686	CMakeFiles/Realtime_filter.dir/Realtime_filter_autogen/mocs_compilation.cpp.o	af45fd13ae93dd27
+0	589	1700611430550243463	Realtime_filter_autogen/mocs_compilation.cpp	bdc6378fc934e34a
+0	589	1700611430550243463	Realtime_filter_autogen/timestamp	bdc6378fc934e34a
+589	1274	1700611431239143219	CMakeFiles/Realtime_filter.dir/mainwindow.cpp.o	26eaf277b8a84fae
+0	589	1700611430550243463	/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/Realtime_filter_autogen/timestamp	bdc6378fc934e34a
+1274	1424	1700611431391239879	Realtime_filter.app/Contents/MacOS/Realtime_filter	90e4dab3631cddcd
