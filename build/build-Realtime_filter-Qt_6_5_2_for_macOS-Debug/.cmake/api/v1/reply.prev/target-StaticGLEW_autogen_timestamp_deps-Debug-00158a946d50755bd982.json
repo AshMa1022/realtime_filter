@@ -14,9 +14,9 @@
 			}
 		]
 	},
-	"id" : "Realtime_filter_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+	"id" : "StaticGLEW_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "Realtime_filter_autogen_timestamp_deps",
+	"name" : "StaticGLEW_autogen_timestamp_deps",
 	"paths" : 
 	{
 		"build" : ".",
@@ -44,13 +44,13 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/Realtime_filter_autogen_timestamp_deps",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/StaticGLEW_autogen_timestamp_deps",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/Realtime_filter_autogen_timestamp_deps.rule",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/StaticGLEW_autogen_timestamp_deps.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

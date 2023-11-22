@@ -411,7 +411,7 @@
 		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug",
 		"/Users/ash/Desktop/CS1230/Realtime_filter",
 		"/Users/ash/Desktop/CS1230/Realtime_filter/src",
-		"/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime",
+		"/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter",
 		"/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE",
 		"/Users/ash/Desktop/CS1230/Realtime_filter/glew/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1",
@@ -442,7 +442,7 @@
 	"MOC_SKIP" : 
 	[
 		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp",
-		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/mocs_compilation.cpp"
+		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
@@ -465,7 +465,7 @@
 	"UIC_SKIP" : 
 	[
 		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp",
-		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/mocs_compilation.cpp"
+		"/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/mocs_compilation.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

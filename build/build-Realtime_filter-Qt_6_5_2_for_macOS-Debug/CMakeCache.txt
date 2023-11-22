@@ -202,7 +202,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=projects_realtime
+CMAKE_PROJECT_NAME:STATIC=realtime_filter
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1
@@ -365,6 +365,15 @@ projects_realtime_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 projects_realtime_SOURCE_DIR:STATIC=/Users/ash/Desktop/CS1230/Realtime_filter
+
+//Value Computed by CMake
+realtime_filter_BINARY_DIR:STATIC=/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug
+
+//Value Computed by CMake
+realtime_filter_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+realtime_filter_SOURCE_DIR:STATIC=/Users/ash/Desktop/CS1230/Realtime_filter
 
 
 ########################

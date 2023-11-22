@@ -8,7 +8,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: projects_realtime
+# Project: realtime_filter
 # Configurations: Debug
 # =============================================================================
 
@@ -38,71 +38,71 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target projects_realtime
+# Object build statements for EXECUTABLE target realtime_filter
 
 
 #############################################
-# Order-only phony target for projects_realtime
+# Order-only phony target for realtime_filter
 
-build cmake_object_order_depends_target_projects_realtime: phony || .rcc/qrc_Resources.cpp cmake_object_order_depends_target_StaticGLEW projects_realtime_autogen projects_realtime_autogen/mocs_compilation.cpp projects_realtime_autogen/timestamp projects_realtime_autogen_timestamp_deps
+build cmake_object_order_depends_target_realtime_filter: phony || .rcc/qrc_Resources.cpp cmake_object_order_depends_target_StaticGLEW realtime_filter_autogen realtime_filter_autogen/mocs_compilation.cpp realtime_filter_autogen/timestamp realtime_filter_autogen_timestamp_deps
 
-build CMakeFiles/projects_realtime.dir/projects_realtime_autogen/mocs_compilation.cpp.o: CXX_COMPILER__projects_realtime_Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_projects_realtime
+build CMakeFiles/realtime_filter.dir/realtime_filter_autogen/mocs_compilation.cpp.o: CXX_COMPILER__realtime_filter_Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_realtime_filter
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
-  DEP_FILE = CMakeFiles/projects_realtime.dir/projects_realtime_autogen/mocs_compilation.cpp.o.d
+  DEP_FILE = CMakeFiles/realtime_filter.dir/realtime_filter_autogen/mocs_compilation.cpp.o.d
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
-  OBJECT_DIR = CMakeFiles/projects_realtime.dir
-  OBJECT_FILE_DIR = CMakeFiles/projects_realtime.dir/projects_realtime_autogen
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
+  OBJECT_DIR = CMakeFiles/realtime_filter.dir
+  OBJECT_FILE_DIR = CMakeFiles/realtime_filter.dir/realtime_filter_autogen
 
-build CMakeFiles/projects_realtime.dir/src/main.cpp.o: CXX_COMPILER__projects_realtime_Debug /Users/ash/Desktop/CS1230/Realtime_filter/src/main.cpp || cmake_object_order_depends_target_projects_realtime
+build CMakeFiles/realtime_filter.dir/src/main.cpp.o: CXX_COMPILER__realtime_filter_Debug /Users/ash/Desktop/CS1230/Realtime_filter/src/main.cpp || cmake_object_order_depends_target_realtime_filter
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
-  DEP_FILE = CMakeFiles/projects_realtime.dir/src/main.cpp.o.d
+  DEP_FILE = CMakeFiles/realtime_filter.dir/src/main.cpp.o.d
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
-  OBJECT_DIR = CMakeFiles/projects_realtime.dir
-  OBJECT_FILE_DIR = CMakeFiles/projects_realtime.dir/src
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
+  OBJECT_DIR = CMakeFiles/realtime_filter.dir
+  OBJECT_FILE_DIR = CMakeFiles/realtime_filter.dir/src
 
-build CMakeFiles/projects_realtime.dir/src/realtime.cpp.o: CXX_COMPILER__projects_realtime_Debug /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.cpp || cmake_object_order_depends_target_projects_realtime
+build CMakeFiles/realtime_filter.dir/src/realtime.cpp.o: CXX_COMPILER__realtime_filter_Debug /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.cpp || cmake_object_order_depends_target_realtime_filter
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
-  DEP_FILE = CMakeFiles/projects_realtime.dir/src/realtime.cpp.o.d
+  DEP_FILE = CMakeFiles/realtime_filter.dir/src/realtime.cpp.o.d
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
-  OBJECT_DIR = CMakeFiles/projects_realtime.dir
-  OBJECT_FILE_DIR = CMakeFiles/projects_realtime.dir/src
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
+  OBJECT_DIR = CMakeFiles/realtime_filter.dir
+  OBJECT_FILE_DIR = CMakeFiles/realtime_filter.dir/src
 
-build CMakeFiles/projects_realtime.dir/src/mainwindow.cpp.o: CXX_COMPILER__projects_realtime_Debug /Users/ash/Desktop/CS1230/Realtime_filter/src/mainwindow.cpp || cmake_object_order_depends_target_projects_realtime
+build CMakeFiles/realtime_filter.dir/src/mainwindow.cpp.o: CXX_COMPILER__realtime_filter_Debug /Users/ash/Desktop/CS1230/Realtime_filter/src/mainwindow.cpp || cmake_object_order_depends_target_realtime_filter
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
-  DEP_FILE = CMakeFiles/projects_realtime.dir/src/mainwindow.cpp.o.d
+  DEP_FILE = CMakeFiles/realtime_filter.dir/src/mainwindow.cpp.o.d
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
-  OBJECT_DIR = CMakeFiles/projects_realtime.dir
-  OBJECT_FILE_DIR = CMakeFiles/projects_realtime.dir/src
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
+  OBJECT_DIR = CMakeFiles/realtime_filter.dir
+  OBJECT_FILE_DIR = CMakeFiles/realtime_filter.dir/src
 
-build CMakeFiles/projects_realtime.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp.o: CXX_COMPILER__projects_realtime_Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp || cmake_object_order_depends_target_projects_realtime
+build CMakeFiles/realtime_filter.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp.o: CXX_COMPILER__realtime_filter_Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp || cmake_object_order_depends_target_realtime_filter
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB
-  DEP_FILE = CMakeFiles/projects_realtime.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp.o.d
+  DEP_FILE = CMakeFiles/realtime_filter.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp.o.d
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
-  OBJECT_DIR = CMakeFiles/projects_realtime.dir
-  OBJECT_FILE_DIR = CMakeFiles/projects_realtime.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Headers -iframework /Users/ash/Qt/6.5.2/macos/lib -isystem /Users/ash/Qt/6.5.2/macos/mkspecs/macx-clang -isystem /Users/ash/Qt/6.5.2/macos/include -isystem /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Headers -isystem /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Headers
+  OBJECT_DIR = CMakeFiles/realtime_filter.dir
+  OBJECT_FILE_DIR = CMakeFiles/realtime_filter.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target projects_realtime
+# Link build statements for EXECUTABLE target realtime_filter
 
 
 #############################################
-# Link the executable projects_realtime
+# Link the executable realtime_filter
 
-build projects_realtime: CXX_EXECUTABLE_LINKER__projects_realtime_Debug CMakeFiles/projects_realtime.dir/projects_realtime_autogen/mocs_compilation.cpp.o CMakeFiles/projects_realtime.dir/src/main.cpp.o CMakeFiles/projects_realtime.dir/src/realtime.cpp.o CMakeFiles/projects_realtime.dir/src/mainwindow.cpp.o CMakeFiles/projects_realtime.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp.o | libStaticGLEW.a /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/QtOpenGLWidgets /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/QtGui /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Versions/A/QtXml /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/QtCore || libStaticGLEW.a projects_realtime_autogen projects_realtime_autogen_timestamp_deps
+build realtime_filter: CXX_EXECUTABLE_LINKER__realtime_filter_Debug CMakeFiles/realtime_filter.dir/realtime_filter_autogen/mocs_compilation.cpp.o CMakeFiles/realtime_filter.dir/src/main.cpp.o CMakeFiles/realtime_filter.dir/src/realtime.cpp.o CMakeFiles/realtime_filter.dir/src/mainwindow.cpp.o CMakeFiles/realtime_filter.dir/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp.o | libStaticGLEW.a /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/QtOpenGLWidgets /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/QtGui /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Versions/A/QtXml /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/QtCore || libStaticGLEW.a realtime_filter_autogen realtime_filter_autogen_timestamp_deps
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/ash/Qt/6.5.2/macos/lib  libStaticGLEW.a  /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/QtOpenGLWidgets  /Users/ash/Qt/6.5.2/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/QtGui  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal  /Users/ash/Qt/6.5.2/macos/lib/QtXml.framework/Versions/A/QtXml  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration
   LINK_PATH = -F/Users/ash/Qt/6.5.2/macos/lib
-  OBJECT_DIR = CMakeFiles/projects_realtime.dir
+  OBJECT_DIR = CMakeFiles/realtime_filter.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = projects_realtime
-  TARGET_PDB = projects_realtime.dbg
+  TARGET_FILE = realtime_filter
+  TARGET_PDB = realtime_filter.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target StaticGLEW
@@ -116,14 +116,14 @@ build cmake_object_order_depends_target_StaticGLEW: phony || StaticGLEW_autogen 
 build CMakeFiles/StaticGLEW.dir/StaticGLEW_autogen/mocs_compilation.cpp.o: CXX_COMPILER__StaticGLEW_Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_StaticGLEW
   DEP_FILE = CMakeFiles/StaticGLEW.dir/StaticGLEW_autogen/mocs_compilation.cpp.o.d
   FLAGS = -Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include
   OBJECT_DIR = CMakeFiles/StaticGLEW.dir
   OBJECT_FILE_DIR = CMakeFiles/StaticGLEW.dir/StaticGLEW_autogen
 
 build CMakeFiles/StaticGLEW.dir/glew/src/glew.c.o: C_COMPILER__StaticGLEW_Debug /Users/ash/Desktop/CS1230/Realtime_filter/glew/src/glew.c || cmake_object_order_depends_target_StaticGLEW
   DEP_FILE = CMakeFiles/StaticGLEW.dir/glew/src/glew.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
-  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/projects_realtime -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include
+  INCLUDES = -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug -I/Users/ash/Desktop/CS1230/Realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/include -I/Users/ash/Desktop/CS1230/Realtime_filter/src -I/Users/ash/Desktop/CS1230/Realtime_filter/realtime_filter -I/Users/ash/Desktop/CS1230/Realtime_filter/PRIVATE -I/Users/ash/Desktop/CS1230/Realtime_filter/glew/include
   OBJECT_DIR = CMakeFiles/StaticGLEW.dir
   OBJECT_FILE_DIR = CMakeFiles/StaticGLEW.dir/glew/src
 
@@ -146,9 +146,9 @@ build libStaticGLEW.a: CXX_STATIC_LIBRARY_LINKER__StaticGLEW_Debug CMakeFiles/St
 
 
 #############################################
-# Utility command for projects_realtime_other_files
+# Utility command for realtime_filter_other_files
 
-build projects_realtime_other_files: phony
+build realtime_filter_other_files: phony
 
 
 #############################################
@@ -218,15 +218,15 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 
 #############################################
-# Utility command for projects_realtime_autogen_timestamp_deps
+# Utility command for realtime_filter_autogen_timestamp_deps
 
-build projects_realtime_autogen_timestamp_deps: phony CMakeFiles/projects_realtime_autogen_timestamp_deps libStaticGLEW.a
+build realtime_filter_autogen_timestamp_deps: phony CMakeFiles/realtime_filter_autogen_timestamp_deps libStaticGLEW.a
 
 
 #############################################
-# Utility command for projects_realtime_autogen
+# Utility command for realtime_filter_autogen
 
-build projects_realtime_autogen: phony CMakeFiles/projects_realtime_autogen projects_realtime_autogen/timestamp projects_realtime_autogen/mocs_compilation.cpp projects_realtime_autogen_timestamp_deps
+build realtime_filter_autogen: phony CMakeFiles/realtime_filter_autogen realtime_filter_autogen/timestamp realtime_filter_autogen/mocs_compilation.cpp realtime_filter_autogen_timestamp_deps
 
 
 #############################################
@@ -244,19 +244,19 @@ build StaticGLEW_autogen: phony CMakeFiles/StaticGLEW_autogen StaticGLEW_autogen
 #############################################
 # Custom command for .rcc/qrc_Resources.cpp
 
-build .rcc/qrc_Resources.cpp | ${cmake_ninja_workdir}.rcc/qrc_Resources.cpp: CUSTOM_COMMAND /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.frag /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.vert .rcc/Resources.qrc /Users/ash/Qt/6.5.2/macos/./libexec/rcc || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a projects_realtime_autogen projects_realtime_autogen_timestamp_deps
+build .rcc/qrc_Resources.cpp | ${cmake_ninja_workdir}.rcc/qrc_Resources.cpp: CUSTOM_COMMAND /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.frag /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.vert .rcc/Resources.qrc /Users/ash/Qt/6.5.2/macos/./libexec/rcc || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a realtime_filter_autogen realtime_filter_autogen_timestamp_deps
   COMMAND = cd /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug && /Users/ash/Qt/6.5.2/macos/./libexec/rcc --output /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp --name Resources /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/Resources.qrc --no-zstd
   DESC = Running rcc for resource Resources
   restat = 1
 
 
 #############################################
-# Custom command for projects_realtime_autogen/timestamp
+# Custom command for realtime_filter_autogen/timestamp
 
-build projects_realtime_autogen/timestamp projects_realtime_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}projects_realtime_autogen/timestamp ${cmake_ninja_workdir}projects_realtime_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /Users/ash/Qt/6.5.2/macos/./libexec/moc /Users/ash/Qt/6.5.2/macos/./libexec/uic || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a projects_realtime_autogen_timestamp_deps
-  COMMAND = cd /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug && /Users/ash/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/projects_realtime_autogen.dir/AutogenInfo.json Debug && /Users/ash/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E touch /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/timestamp && /Users/ash/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /Users/ash/Desktop/CS1230/Realtime_filter /Users/ash/Desktop/CS1230/Realtime_filter /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/deps /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/d/910a6d148252add1db2432fad53f77a2f3122c914a6551fa5e1a724a120eab23.d
-  DESC = Automatic MOC and UIC for target projects_realtime
-  depfile = /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/d/910a6d148252add1db2432fad53f77a2f3122c914a6551fa5e1a724a120eab23.d
+build realtime_filter_autogen/timestamp realtime_filter_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}realtime_filter_autogen/timestamp ${cmake_ninja_workdir}realtime_filter_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /Users/ash/Qt/6.5.2/macos/./libexec/moc /Users/ash/Qt/6.5.2/macos/./libexec/uic || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a realtime_filter_autogen_timestamp_deps
+  COMMAND = cd /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug && /Users/ash/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/realtime_filter_autogen.dir/AutogenInfo.json Debug && /Users/ash/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E touch /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/timestamp && /Users/ash/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /Users/ash/Desktop/CS1230/Realtime_filter /Users/ash/Desktop/CS1230/Realtime_filter /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/deps /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/d/74718d900e30b8ad3b5f449884f9724321395c8aa1f75c5ac5b335cd8525a9a7.d
+  DESC = Automatic MOC and UIC for target realtime_filter
+  depfile = /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/d/74718d900e30b8ad3b5f449884f9724321395c8aa1f75c5ac5b335cd8525a9a7.d
   restat = 1
 
 
@@ -271,21 +271,21 @@ build StaticGLEW_autogen/timestamp StaticGLEW_autogen/mocs_compilation.cpp | ${c
 
 
 #############################################
-# Phony custom command for CMakeFiles/projects_realtime_autogen_timestamp_deps
+# Phony custom command for CMakeFiles/realtime_filter_autogen_timestamp_deps
 
-build CMakeFiles/projects_realtime_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/projects_realtime_autogen_timestamp_deps: phony /Users/ash/Qt/6.5.2/macos/./libexec/uic /Users/ash/Qt/6.5.2/macos/./libexec/moc libStaticGLEW.a || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a
+build CMakeFiles/realtime_filter_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/realtime_filter_autogen_timestamp_deps: phony libStaticGLEW.a /Users/ash/Qt/6.5.2/macos/./libexec/moc /Users/ash/Qt/6.5.2/macos/./libexec/uic || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a
 
 
 #############################################
-# Phony custom command for CMakeFiles/projects_realtime_autogen
+# Phony custom command for CMakeFiles/realtime_filter_autogen
 
-build CMakeFiles/projects_realtime_autogen | ${cmake_ninja_workdir}CMakeFiles/projects_realtime_autogen: phony projects_realtime_autogen/timestamp || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a projects_realtime_autogen_timestamp_deps
+build CMakeFiles/realtime_filter_autogen | ${cmake_ninja_workdir}CMakeFiles/realtime_filter_autogen: phony realtime_filter_autogen/timestamp || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a realtime_filter_autogen_timestamp_deps
 
 
 #############################################
 # Phony custom command for CMakeFiles/StaticGLEW_autogen_timestamp_deps
 
-build CMakeFiles/StaticGLEW_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/StaticGLEW_autogen_timestamp_deps: phony /Users/ash/Qt/6.5.2/macos/./libexec/uic /Users/ash/Qt/6.5.2/macos/./libexec/moc
+build CMakeFiles/StaticGLEW_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/StaticGLEW_autogen_timestamp_deps: phony /Users/ash/Qt/6.5.2/macos/./libexec/moc /Users/ash/Qt/6.5.2/macos/./libexec/uic
 
 
 #############################################
@@ -377,7 +377,7 @@ build StaticGLEW: phony libStaticGLEW.a
 #############################################
 # Folder: /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug
 
-build all: phony projects_realtime libStaticGLEW.a glm/all
+build all: phony realtime_filter libStaticGLEW.a glm/all
 
 # =============================================================================
 
