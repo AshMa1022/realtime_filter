@@ -2,6 +2,8 @@
   <qresource prefix="/">
     <file alias="resources/shaders/default.frag">/Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.frag</file>
     <file alias="resources/shaders/default.vert">/Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.vert</file>
+    <file alias="resources/shaders/texture.vert">/Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/texture.vert</file>
+    <file alias="resources/shaders/texture.frag">/Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/texture.frag</file>
   </qresource>
 </RCC>
 

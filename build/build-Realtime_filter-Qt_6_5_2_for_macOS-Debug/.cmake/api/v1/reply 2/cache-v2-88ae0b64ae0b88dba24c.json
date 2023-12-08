@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "projects_realtime"
+			"value" : "realtime_filter"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -6255,6 +6255,42 @@
 		},
 		{
 			"name" : "projects_realtime_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/ash/Desktop/CS1230/Realtime_filter"
+		},
+		{
+			"name" : "realtime_filter_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug"
+		},
+		{
+			"name" : "realtime_filter_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "realtime_filter_SOURCE_DIR",
 			"properties" : 
 			[
 				{

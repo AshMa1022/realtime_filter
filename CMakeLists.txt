@@ -32,6 +32,13 @@ add_executable(${PROJECT_NAME}
 
     src/mainwindow.h
     src/realtime.h
+    src/object.h src/object.cpp
+    src/shaderloader.h
+    src/camera.h src/camera.cpp
+    ../projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
+    ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
+src/settings.h src/settings.cpp
+src/sphere.h src/sphere.cpp
 
 
 )
@@ -61,7 +68,16 @@ qt6_add_resources(${PROJECT_NAME} "Resources"
     FILES
         resources/shaders/default.frag
         resources/shaders/default.vert
+        resources/shaders/texture.vert
+        resources/shaders/texture.frag
 )
+
+#target_sources(realtime_filter_other_files
+#  PRIVATE
+#  resources/shaders/texture.vert
+#  resources/shaders/texture.frag
+
+#)
 
 # GLEW: this provides support for Windows (including 64-bit)
 if (WIN32)

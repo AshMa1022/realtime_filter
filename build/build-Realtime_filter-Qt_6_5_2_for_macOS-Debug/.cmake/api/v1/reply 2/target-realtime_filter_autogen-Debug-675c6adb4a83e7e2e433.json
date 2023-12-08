@@ -17,12 +17,12 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "projects_realtime_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "realtime_filter_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "projects_realtime_autogen::@6890427a1f51a3e7e1df",
+	"id" : "realtime_filter_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "projects_realtime_autogen",
+	"name" : "realtime_filter_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -51,19 +51,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/projects_realtime_autogen",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/realtime_filter_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/projects_realtime_autogen.rule",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/realtime_filter_autogen.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/projects_realtime_autogen/timestamp.rule",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

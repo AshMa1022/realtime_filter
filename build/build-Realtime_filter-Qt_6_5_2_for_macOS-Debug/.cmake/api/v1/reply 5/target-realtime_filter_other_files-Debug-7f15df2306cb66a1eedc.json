@@ -8,7 +8,8 @@
 			"_qt_internal_expose_source_file_to_ide",
 			"_qt_internal_process_resource",
 			"qt6_add_resources",
-			"set_property"
+			"set_property",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -23,7 +24,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 58,
+				"line" : 65,
 				"parent" : 0
 			},
 			{
@@ -55,11 +56,17 @@
 				"file" : 0,
 				"line" : 1735,
 				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 73,
+				"parent" : 0
 			}
 		]
 	},
-	"id" : "projects_realtime_other_files::@6890427a1f51a3e7e1df",
-	"name" : "projects_realtime_other_files",
+	"id" : "realtime_filter_other_files::@6890427a1f51a3e7e1df",
+	"name" : "realtime_filter_other_files",
 	"paths" : 
 	{
 		"build" : ".",
@@ -72,7 +79,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -86,6 +95,16 @@
 		{
 			"backtrace" : 6,
 			"path" : "resources/shaders/default.vert",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"path" : "resources/shaders/texture.vert",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"path" : "resources/shaders/texture.frag",
 			"sourceGroupIndex" : 0
 		}
 	],

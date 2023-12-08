@@ -13,18 +13,17 @@
 #include <QTime>
 #include <QTimer>
 #include "camera.h"
-#include "utils/sceneparser.h"
-#include "Shapes/cube.h"
-#include "Shapes/sphere.h"
-#include "utils/shaderloader.h"
-#include "Shapes/shape.h"
-#include "Shapes/cylinder.h"
-#include "Shapes/cone.h"
+#include "object.h"
+#include "sphere.h"
+
+#include "shaderloader.h"
+#include "../projects-realtime-AshMa1022/src/utils/sceneparser.h"
+
 
 class Realtime : public QOpenGLWidget
 {
 public:
-    Realtime(QWidget *parent = nullptr);
+    Realtime(QWidget *parent=nullptr);
     void finish();                                      // Called on program exit
     void sceneChanged();
     void settingsChanged();
@@ -46,7 +45,7 @@ private:
     void mouseMoveEvent(QMouseEvent *event) override;
     void timerEvent(QTimerEvent *event) override;
 
-    void bindHelper(Shape &shape,std::vector<float> &vertex, int index);
+//    void bindHelper(Shape &shape,std::vector<float> &vertex, int index);
 
     // Tick Related Variables
     int m_timer;                                        // Stores timer which attempts to run ~60 times per second
@@ -59,29 +58,32 @@ private:
 
     // Device Correction Variables
     int m_devicePixelRatio;
-
     Camera cam;
     GLuint m_shader; // Stores id of shader program
+    GLuint m_filter;
 
 
 
     GLuint m_shade;
     std::vector<GLuint> m_vbos;    // Stores id of VBO
     std::vector<GLuint> m_vaos;    // Stores id of VAO
-
-    Cube cube;
+    GLuint m_fbo;
+    GLuint m_fbo_texture;
+    QImage m_image;
+    GLuint m_cake;
+    GLuint m_fbo_renderbuffer;
+    GLuint m_defaultFBO;
+    Object obj;
     Sphere sphere;
-    Cylinder cylinder;
-    Cone cone;
-    std::vector<float> cube_vertex;
-    std::vector<float> sphere_vertex;
-    std::vector<float> cyl_vertex;
-    std::vector<float> cone_vertex;
+    std::vector<GLfloat> sphere_vertex;
+    std::vector<GLfloat> obj_vertex;
 
-    int param1;
-    int param2;
     int cout;
     bool initialized = false;
+    bool blur = false;
+    bool sharpe = false;
+    bool invert = false;
+    bool gray = false;
     std::vector<RenderShapeData> shapes;
     std::vector<SceneLightData> lights;
     SceneGlobalData globalData;
@@ -99,6 +101,11 @@ private:
     float m_shininess;
 
     SceneMaterial material;
+
+    glm::mat4 rotateX(float unit);
+    void drawText(GLuint texture);
+    void makeFBO();
+    void bindObj();
 
 
 };

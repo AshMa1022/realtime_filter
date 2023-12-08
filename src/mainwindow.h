@@ -1,21 +1,56 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
+#include <QCheckBox>
+#include <QSlider>
+#include <QSpinBox>
+#include <QDoubleSpinBox>
+#include <QPushButton>
+#include "realtime.h"
+#include "../projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp"
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
+class MainWindow : public QWidget
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    void initialize();
+    void finish();
 
 private:
-    Ui::MainWindow *ui;
+    void connectUIElements();
+    void connectNear();
+    void connectFar();
+    void connectPerPixelFilter();
+    void connectKernelBasedFilter();
+    void connectUploadFile();
+    void connectExtraCredit();
+
+
+    Realtime *realtime;
+    AspectRatioWidget *aspectRatioWidget;
+    QCheckBox *filter1;
+    QCheckBox *filter2;
+    QPushButton *uploadFile;
+    QPushButton *saveImage;
+    QSlider *p1Slider;
+    QSlider *p2Slider;
+    QSpinBox *p1Box;
+    QSpinBox *p2Box;
+    QSlider *nearSlider;
+    QSlider *farSlider;
+    QDoubleSpinBox *nearBox;
+    QDoubleSpinBox *farBox;
+
+
+
+private slots:
+    void onPerPixelFilter();
+    void onKernelBasedFilter();
+    void onUploadFile();
+    void onValChangeNearSlider(int newValue);
+    void onValChangeFarSlider(int newValue);
+    void onValChangeNearBox(double newValue);
+    void onValChangeFarBox(double newValue);
+
 };
-#endif // MAINWINDOW_H

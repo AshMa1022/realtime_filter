@@ -397,15 +397,69 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/camera.h",
+			"MU",
+			"UVLADIE3JM/moc_camera.cpp",
+			null
+		],
+		[
 			"/Users/ash/Desktop/CS1230/Realtime_filter/src/mainwindow.h",
 			"MU",
 			"UVLADIE3JM/moc_mainwindow.cpp",
 			null
 		],
 		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/object.h",
+			"MU",
+			"UVLADIE3JM/moc_object.cpp",
+			null
+		],
+		[
 			"/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.h",
 			"MU",
 			"UVLADIE3JM/moc_realtime.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.h",
+			"MU",
+			"UVLADIE3JM/moc_settings.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/shaderloader.h",
+			"MU",
+			"UVLADIE3JM/moc_shaderloader.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.h",
+			"MU",
+			"UVLADIE3JM/moc_sphere.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp",
+			"MU",
+			"SY2VK5D6SS/moc_aspectratiowidget.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenedata.h",
+			"MU",
+			"UHHWF5EKV4/moc_scenedata.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenefilereader.h",
+			"MU",
+			"UHHWF5EKV4/moc_scenefilereader.cpp",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.h",
+			"MU",
+			"UHHWF5EKV4/moc_sceneparser.cpp",
 			null
 		]
 	],
@@ -489,6 +543,11 @@
 	"SETTINGS_FILE" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/CMakeFiles/realtime_filter_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/camera.cpp",
+			"MU",
+			null
+		],
 		[ "/Users/ash/Desktop/CS1230/Realtime_filter/src/main.cpp", "MU", null ],
 		[
 			"/Users/ash/Desktop/CS1230/Realtime_filter/src/mainwindow.cpp",
@@ -496,7 +555,32 @@
 			null
 		],
 		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/object.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenefilereader.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.cpp",
 			"MU",
 			null
 		]
