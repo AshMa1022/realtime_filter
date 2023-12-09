@@ -43,7 +43,7 @@ void Realtime::finish() {
     this->doneCurrent();
 }
 void Realtime::bindObj(){
-    if(obj.loadOBJ("/Users/ash/Desktop/CS1230/Realtime_filter/cake.obj")){
+    if(obj.loadOBJ("/Users/ash/Desktop/CS1230/Realtime_filter/caki.obj")){
         glClearColor(0.f,0.f,0.f,0.f); //clear the state
         m_vbos[0] = 0;
         glGenBuffers(1,&m_vbos[0]);
@@ -59,7 +59,8 @@ void Realtime::bindObj(){
         glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8 *sizeof(GL_FLOAT),0);
         glEnableVertexAttribArray(1);
         glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,8 *sizeof(GL_FLOAT),reinterpret_cast<void*>(3 *sizeof(GL_FLOAT)));
-
+        glEnableVertexAttribArray(2);
+        glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE,8 *sizeof(GL_FLOAT),reinterpret_cast<void*>(6 *sizeof(GL_FLOAT)));
         glBindBuffer(GL_ARRAY_BUFFER,0);
         glBindVertexArray(0);
     }
@@ -117,7 +118,7 @@ void Realtime::initializeGL() {
     // Allows OpenGL to draw objects appropriately on top of one another
     glEnable(GL_DEPTH_TEST);
     // Tells OpenGL to only draw the front face
-//    glEnable(GL_CULL_FACE);
+    glEnable(GL_CULL_FACE);
     // Tells OpenGL how big the screen is
     glViewport(0, 0, size().width() * m_devicePixelRatio, size().height() * m_devicePixelRatio);
 
@@ -125,12 +126,13 @@ void Realtime::initializeGL() {
     m_shader = ShaderLoader::createShaderProgram(":/resources/shaders/default.vert",":/resources/shaders/default.frag");
     m_filter = ShaderLoader::createShaderProgram(":/resources/shaders/texture.vert",":/resources/shaders/texture.frag");
 
-    bindObj();
+
         // Prepare filepath
-        QString kitten_filepath = QString(":/resources/images/check.png");
+        QString kitten_filepath = QString("/Users/ash/Desktop/CS1230/Realtime_filter/resources/images/check.png");
 
         // Task 1: Obtain image from filepath
         m_image.load(kitten_filepath);
+        std::cout<<m_image.load(kitten_filepath)<<std::endl;
         // Task 2: Format image to fit OpenGL
         m_image = m_image.convertToFormat(QImage::Format_RGBA8888).mirrored();
         // Task 3: Generate kitten texture
@@ -151,6 +153,10 @@ void Realtime::initializeGL() {
 
         // Task 7: Unbind kitten texture
         glBindTexture(GL_TEXTURE_2D,0);
+        glUseProgram(m_shader);
+        glUniform1i(glGetUniformLocation(m_shader,"samp"),0);
+        glUseProgram(0);
+    bindObj();
     std::vector<GLfloat> fullscreen_quad_data =
         { //     POSITIONS    //
             -1.f,  1.f, 0.0f,
@@ -237,6 +243,7 @@ void Realtime::paintGL() {
         int spot_cout = 0;
         for(int l = 0; l<lights.size();l++){
 
+
             std::string type = "light_type[" + std::to_string(l) + "]";
             std::string name = "light_pos[" + std::to_string(l) + "]";
             std::string func = "light_func[" + std::to_string(l) + "]";
@@ -302,9 +309,12 @@ void Realtime::paintGL() {
         glUniform4fv(glGetUniformLocation(m_shader,"cam_pos"),1,&cameraPosition[0]);
 
         // Draw Command
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D,m_cake);
         glDrawArrays(GL_TRIANGLES, 0, vertex.size() / 8);
         // Unbind Vertex Array
         glBindVertexArray(0);
+        glBindTexture(GL_TEXTURE_2D, 0);
 
 
     }
