@@ -42,7 +42,7 @@ void main()
 
         fragColor = vec4(color, 1.0);
     }
-    if(blur){
+    if(invert){
 
         float bk[25] = float[25](1.0/25.0, 1.0/25.0, 1.0/25.0,1.0/25.0, 1.0/25.0,
                             1.0/25.0, 1.0/25.0, 1.0/25.0,1.0/25.0, 1.0/25.0,
@@ -70,7 +70,7 @@ void main()
     }
     // Task 33: Invert fragColor's r, g, and b color channels if your bool is true
     if(invert){
-        fragColor = vec4(1.f)-fragColor;
+//        fragColor = vec4(1.f)-fragColor;
     }
     if(gray){
         float pix = 0.299 * fragColor[0] + 0.587 * fragColor[1] + 0.114 * fragColor[2];

@@ -1047,8 +1047,8 @@
 /Users/ash/Desktop/CS1230/Realtime_filter/src/mainwindow.cpp
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.h
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.cpp
-/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.h
 /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.cpp
+/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.h
 /Users/ash/Desktop/CS1230/Realtime_filter/src/camera.cpp
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp
  mmc:Q_OBJECT

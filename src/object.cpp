@@ -12,27 +12,27 @@ bool Object::loadOBJ(const char* path) {
 
     std::string line;
     while (getline(in, line)) {
-        if (line.substr(0, 2) == "v ") {
+        if (line.substr(0, 2) == "v ") { // stored vertex
             std::istringstream v(line.substr(2));
             GLfloat x, y, z;
             v >> x; v >> y; v >> z;
             temp_vertices.push_back(x);
             temp_vertices.push_back(y);
             temp_vertices.push_back(z);
-        } else if (line.substr(0, 3) == "vn ") {
+        } else if (line.substr(0, 3) == "vn ") { // stored normal
             std::istringstream vn(line.substr(3));
             GLfloat x, y, z;
             vn >> x; vn >> y; vn >> z;
             temp_normals.push_back(x);
             temp_normals.push_back(y);
             temp_normals.push_back(z);
-        }else if (line.substr(0, 3) == "vt ") {
+        }else if (line.substr(0, 3) == "vt ") { // stored uv coord
             std::istringstream vn(line.substr(3));
             GLfloat x, y;
             vn >> x; vn >> y;
             temp_texture.push_back(x);
             temp_texture.push_back(y);
-        } else if (line.substr(0, 2) == "f ") {
+        } else if (line.substr(0, 2) == "f ") { // stored faces
             std::istringstream f(line.substr(2));
             std::string segment;
             GLuint vertexIndex, textureIndex, normalIndex;
@@ -42,16 +42,14 @@ bool Object::loadOBJ(const char* path) {
                 std::istringstream faceSegment(segment);
                 if (faceSegment >> vertexIndex >> slash >> textureIndex >> slash >> normalIndex) {
                     vertexIndices.push_back(vertexIndex);
-                    // If you need texture indices, you can store them as well
                     textureIndices.push_back(textureIndex);
                     normalIndices.push_back(normalIndex);
                 }
             }
         }
     }
-    std::cout<<vertexIndices[0]<<std::endl;
 
-    for (unsigned int i = 0; i < vertexIndices.size(); i++) {
+    for (unsigned int i = 0; i < vertexIndices.size(); i++) { //push v,vn,vt base on the face indexing
         GLuint vertexIndex = vertexIndices[i];
         GLfloat x = temp_vertices[3 * (vertexIndex-1)];
         GLfloat y = temp_vertices[3 * (vertexIndex-1) + 1];
@@ -64,8 +62,8 @@ bool Object::loadOBJ(const char* path) {
         GLfloat nz = temp_normals[3 * (normalIndex-1) + 2];
 
         GLuint texturelIndex = textureIndices[i];
-        GLfloat tx = temp_texture[3 * (texturelIndex-1)];
-        GLfloat ty = temp_texture[3 * (texturelIndex-1) + 1];
+        GLfloat tx = temp_texture[2 * (texturelIndex-1)];
+        GLfloat ty = temp_texture[2 * (texturelIndex-1) + 1];
 
         out_vertices.push_back(x);
         out_vertices.push_back(y);

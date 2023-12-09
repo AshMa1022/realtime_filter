@@ -43,7 +43,7 @@ void Realtime::finish() {
     this->doneCurrent();
 }
 void Realtime::bindObj(){
-    if(obj.loadOBJ("/Users/ash/Desktop/CS1230/Realtime_filter/caki.obj")){
+    if(obj.loadOBJ("/Users/ash/Desktop/CS1230/Realtime_filter/cakii.obj")){
         glClearColor(0.f,0.f,0.f,0.f); //clear the state
         m_vbos[0] = 0;
         glGenBuffers(1,&m_vbos[0]);
@@ -128,7 +128,7 @@ void Realtime::initializeGL() {
 
 
         // Prepare filepath
-        QString kitten_filepath = QString("/Users/ash/Desktop/CS1230/Realtime_filter/resources/images/check.png");
+        QString kitten_filepath = QString("/Users/ash/Desktop/CS1230/Realtime_filter/resources/images/cakiiii.png");
 
         // Task 1: Obtain image from filepath
         m_image.load(kitten_filepath);
@@ -147,6 +147,8 @@ void Realtime::initializeGL() {
         glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,m_image.width(),m_image.height(),0,GL_RGBA,GL_UNSIGNED_BYTE,m_image.bits());
 
         // Task 6: Set min and mag filters' interpolation mode to linear
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
 
@@ -214,6 +216,7 @@ void Realtime::drawText(GLuint texture){
     // Task 3: deactivate the shader program by passing 0 into glUseProgram
     glUseProgram(0);
 
+
 }
 
 void Realtime::paintGL() {
@@ -226,7 +229,7 @@ void Realtime::paintGL() {
     // Bind Sphere Vertex Data
     for(int i=0; i< shapes.size();i++){
 
-        m_model = settings.m_data.shapes[i].ctm;
+//        m_model = settings.m_data.shapes[i].ctm;
         m_shininess = settings.m_data.shapes[i].primitive.material.shininess;
         glBindVertexArray(m_vaos[0]);
         std::vector<float> vertex;
@@ -358,6 +361,7 @@ void Realtime::sceneChanged() {
     m_kd =globalData.kd;
     initialized = true;
     cout=0;
+    m_model = settings.m_data.shapes[0].ctm;
 
 }
 
@@ -409,8 +413,13 @@ void Realtime::mouseMoveEvent(QMouseEvent *event) {
         m_prev_mouse_pos = glm::vec2(posX, posY);
 
         // Use deltaX and deltaY here to rotate
-        m_view = cam.rotateX(deltaX);
-        m_view = cam.rotateY(deltaY);
+        float angleX = static_cast<float>(deltaY)*0.5 ; // or -deltaY, depending on your coordinate system
+        float angleY = static_cast<float>(deltaX)*0.5 ; // or -deltaX
+
+        // Apply rotations to the model matrix
+/*        m_model = glm::rotate(m_model, glm::radians(angleX), glm::vec3(1.0f, 0.0f, 0.0f));*/
+        m_model = glm::rotate(m_model, glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
+        std::cout<<m_model[0][0]<<std::endl;
         update(); // asks for a PaintGL() call to occur
     }
 }
