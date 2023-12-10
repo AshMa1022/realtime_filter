@@ -19,8 +19,7 @@ public:
 
 private:
     void connectUIElements();
-    void connectNear();
-    void connectFar();
+    void connectCel();
     void connectPerPixelFilter();
     void connectKernelBasedFilter();
     void connectUploadFile();
@@ -31,6 +30,7 @@ private:
     AspectRatioWidget *aspectRatioWidget;
     QCheckBox *filter1;
     QCheckBox *filter2;
+    QCheckBox *shader1;
     QPushButton *uploadFile;
     QPushButton *saveImage;
     QSlider *p1Slider;
@@ -47,10 +47,7 @@ private:
 private slots:
     void onPerPixelFilter();
     void onKernelBasedFilter();
+    void onCel();
     void onUploadFile();
-    void onValChangeNearSlider(int newValue);
-    void onValChangeFarSlider(int newValue);
-    void onValChangeNearBox(double newValue);
-    void onValChangeFarBox(double newValue);
 
 };

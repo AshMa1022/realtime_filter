@@ -34,11 +34,11 @@
       ]
     },
  {
-      "translate": [10.0, 5.0, 10.0],
+      "translate": [10.0, 5.0, 15.0],
       "lights": [
         {
           "type": "point",
-          "color": [0.2, 0.1, 0.1],
+          "color": [0.6, 0.1, 0.1],
           "attenuationCoeff": [1, 0, 0]
         }
       ]
@@ -46,19 +46,32 @@
     {
       "groups": [
         {
-          "scale": [2.0, 2.0, 2.0],
-          "rotate": [0.0, 1.0, 0.0, 0.0],
+          
           "primitives": [
             {
               "type": "mesh",
               "ambient": [0.4, 0.4, 0.4],
-              "meshFile": "birth.obj",
+              "meshFile": "caki",
               "diffuse": [0.43, 0.73, 0.99],
               "specular": [1.0, 1.0, 1.0],
               "shininess": 30.0
             }
           ]
-        }
+        },
+	{
+	  "translate": [0.0, 0.5, 0.0],
+          "primitives": [
+            {
+              "type": "mesh",
+              "ambient": [0.4, 0.4, 0.4],
+              "meshFile": "candle",
+              "diffuse": [0.43, 0.73, 0.99],
+              "specular": [1.0, 1.0, 1.0],
+              "shininess": 30.0
+            }
+          ]
+	}
+	
       ]
     }
   ]

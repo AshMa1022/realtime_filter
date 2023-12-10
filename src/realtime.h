@@ -74,9 +74,11 @@ private:
     GLuint m_fbo_renderbuffer;
     GLuint m_defaultFBO;
     Object obj;
+    Object candle;
     Sphere sphere;
     std::vector<GLfloat> sphere_vertex;
     std::vector<GLfloat> obj_vertex;
+    std::vector<GLfloat> candle_vertex;
 
     int cout;
     bool initialized = false;
@@ -84,6 +86,8 @@ private:
     bool sharpe = false;
     bool invert = false;
     bool gray = false;
+    bool pixel = false;
+    bool cel_shading = false;
     std::vector<RenderShapeData> shapes;
     std::vector<SceneLightData> lights;
     SceneGlobalData globalData;
@@ -105,7 +109,7 @@ private:
     glm::mat4 rotateX(float unit);
     void drawText(GLuint texture);
     void makeFBO();
-    void bindObj();
+    void bindObj(int index,Object &obj,std::vector<float> &vertex,const char* path);
 
 
 };

@@ -19,6 +19,7 @@ uniform vec4 spot[10];
 uniform vec2 angle[10]; //0:angle 1:pen
 uniform int light_type[10];
 uniform vec3 light_func[10];
+uniform bool cel_shading;
 
 uniform int num_l;
 // Task 14: declare relevant uniform(s) here, for specular lighting
@@ -26,119 +27,108 @@ uniform float m_ks;
 uniform float m_shininess;
 uniform vec4 cam_pos;
 
-vec4 applyCelShading(vec4 color) {
-    const int levels = 4; // Number of color levels
-    float step = 1.0 / float(levels);
-
-    for (int i = 1; i <= levels; ++i) {
-        if (color[0] < step * float(i)) {
-            color[0] = step * float(i - 1);
-            break;
-        }
-        if (color[1] < step * float(i)) {
-            color[1] = step * float(i - 1);
-            break;
-        }
-        if (color[2] < step * float(i)) {
-            color[2] = step * float(i - 1);
-            break;
-        }
-    }
-    // Repeat for color.g and color.b if needed
-
-    return color;
-}
 
 void main() {
-    vec3 accumulatedAmbient = vec3(0.0);
-    vec3 accumulatedDiffuse = vec3(0.0);
+    if(cel_shading){
+        vec3 accumulatedAmbient = vec3(0.0);
+        vec3 accumulatedDiffuse = vec3(0.0);
+        int spot_cout=0;
+        float att = 1;
+        for(int i = 0; i < num_l; i++) {
+            float dis = distance(light_pos[i],vec4(position,1.0));
+            vec3 function = light_func[i];
+            float a =1.0 /(function[0] + function[1] * dis + function[2] *dis * dis);
+            att = (a>1)? 1:a;
+            // Ambient
+            float ambientStrength = 0.1;
+            vec3 ambient = ambientStrength * vec3(light_col[i]);
 
-    for(int i = 0; i < 1; i++) {
-        // Ambient
-        float ambientStrength = 0.1;
-        vec3 ambient = ambientStrength * vec3(light_col[i]);
+            // Diffuse
+            vec3 norm = normalize(normal);
+            vec3 lightDir = normalize(vec3(light_pos[i]) - position);
+            float diff = max(dot(norm, lightDir), 0.0);
 
-        // Diffuse
-        vec3 norm = normalize(normal);
-        vec3 lightDir = normalize(vec3(light_pos[i]) - position);
-        float diff = max(dot(norm, lightDir), 0.0);
+            // Accumulate ambient and diffuse contributions
+            accumulatedAmbient += ambient;
+            accumulatedDiffuse += att*diff * vec3(light_col[i]);
+        }
 
-        // Accumulate ambient and diffuse contributions
-        accumulatedAmbient += ambient;
-        accumulatedDiffuse += diff * vec3(light_col[i]);
+        if (length(accumulatedDiffuse) > 0.8)
+            accumulatedDiffuse = vec3(0.8);
+        else if (length(accumulatedDiffuse) > 0.65)
+            accumulatedDiffuse = vec3(0.7);
+        else if (length(accumulatedDiffuse) > 0.58)
+            accumulatedDiffuse = vec3(0.65);
+        else if (length(accumulatedDiffuse) > 0.5)
+            accumulatedDiffuse = vec3(0.6);
+        else if (length(accumulatedDiffuse) > 0.3)
+            accumulatedDiffuse = vec3(0.4);
+        else
+            accumulatedDiffuse = vec3(0.2);
+
+        // Clamp color
+        vec3 final = vec3(texture(samp,text)) *(accumulatedAmbient + accumulatedDiffuse);
+        color = vec4(final,1.0);
     }
-
-    if (length(accumulatedDiffuse) > 0.6)
-        accumulatedDiffuse = vec3(0.8);
-    else if (length(accumulatedDiffuse) > 0.5)
-        accumulatedDiffuse = vec3(0.6);
-    else if (length(accumulatedDiffuse) > 0.3)
-        accumulatedDiffuse = vec3(0.4);
-    else
-        accumulatedDiffuse = vec3(0.2);
-
-    // Clamp color to prevent overflow
-    vec3 final = vec3(texture(samp,text)) *(accumulatedAmbient + accumulatedDiffuse);
-    color = vec4(final,1.0);
 //    // Remember that you need to renormalize vectors here if you want them to be normalized
 
-//    // Task 10: set your output color to white (i.e. vec4(1.0)). Make sure you get a white circle!
-//    color =vec4(0,0,0,0);
-//    color += m_ka * vec4(material[0],1.f);
-//    int spot_cout=0;
+else{
+    color =vec4(0,0,0,0);
+    color += m_ka * vec4(material[0],1.f);
+    int spot_cout=0;
 
-//    // Task 12: add ambient component to output color
-//    for(int i =0; i<num_l; i++){
-//        float att;
-//        vec4 light_dir;
-//         // Ambient component
-//        if(light_type[i] == 0){
-//            att = 1;
-//            light_dir =-normalize(light_pos[i]);
-//        }
-//        else{
-//            float dis = distance(light_pos[i],vec4(position,1.0));
-//            vec3 function = light_func[i];
-//            float a =1.0 /(function[0] + function[1] * dis + function[2] *dis * dis);
-//            att = (a>1)? 1:a;
-//            light_dir =normalize(light_pos[i]-vec4(position,1.0));
-
-
-//            if(light_type[i] == 2){
-//                float between = acos(dot(normalize(vec4(position,1.0)-light_pos[i]),normalize(spot[spot_cout])));
-//                float inner = angle[spot_cout][0]-angle[spot_cout][1];
-//                float outer = angle[spot_cout][0];
+    // Task 12: add ambient component to output color
+    for(int i =0; i<num_l; i++){
+        float att;
+        vec4 light_dir;
+         // Ambient component
+        if(light_type[i] == 0){
+            att = 1;
+            light_dir =-normalize(light_pos[i]);
+        }
+        else{
+            float dis = distance(light_pos[i],vec4(position,1.0));
+            vec3 function = light_func[i];
+            float a =1.0 /(function[0] + function[1] * dis + function[2] *dis * dis);
+            att = (a>1)? 1:a;
+            light_dir =normalize(light_pos[i]-vec4(position,1.0));
 
 
-//                if(between >inner && between <= outer){
-//                    float falloff= -2 * pow((between-inner)/(angle[spot_cout][1]),3) + 3 *  pow((between-inner)/(angle[spot_cout][1]),2);
-//                    att= 1-falloff;
-
-//                }
-//                else if(between >outer){
-//                    att = 0;
-//                }
-//                spot_cout++;
-//            }
-//        }
+            if(light_type[i] == 2){
+                float between = acos(dot(normalize(vec4(position,1.0)-light_pos[i]),normalize(spot[spot_cout])));
+                float inner = angle[spot_cout][0]-angle[spot_cout][1];
+                float outer = angle[spot_cout][0];
 
 
-//        float dott = dot(light_dir,normalize(vec4(normal,0.f)));
-//        dott = clamp(dott, 0.f, 1.f);
+                if(between >inner && between <= outer){
+                    float falloff= -2 * pow((between-inner)/(angle[spot_cout][1]),3) + 3 *  pow((between-inner)/(angle[spot_cout][1]),2);
+                    att= 1-falloff;
 
-//        color += att* 0.8*m_kd * dott* vec4(material[1],1.f)* light_col[i]+ 0.2*(texture(samp, text)); // Diffuse component
+                }
+                else if(between >outer){
+                    att = 0;
+                }
+                spot_cout++;
+            }
+        }
 
-//        vec4 dir_to_cam = normalize(cam_pos-vec4(position,1.0));
 
-//        vec4 reflec = normalize(reflect(-light_dir, normalize(vec4(normal, 0.0))));
-//        if (m_shininess >0){
-//            float spec= pow(clamp(dot(dir_to_cam,reflec),0.f,1.f),m_shininess);
-//            color += att* m_ks * spec *vec4(material[2],1.f) * light_col[i] ; // Specular component
-//        }
+        float dott = dot(light_dir,normalize(vec4(normal,0.f)));
+        dott = clamp(dott, 0.f, 1.f);
 
-//    }
-//    color = applyCelShading(color);
-//    color = texture(samp, text);
+        color += att* 0.8*m_kd * dott* vec4(material[1],1.f)* light_col[i]+ 0.2*(texture(samp, text)); // Diffuse component
+
+        vec4 dir_to_cam = normalize(cam_pos-vec4(position,1.0));
+
+        vec4 reflec = normalize(reflect(-light_dir, normalize(vec4(normal, 0.0))));
+        if (m_shininess >0){
+            float spec= pow(clamp(dot(dir_to_cam,reflec),0.f,1.f),m_shininess);
+            color += att* m_ks * spec *vec4(material[2],1.f) * light_col[i] ; // Specular component
+        }
+
+    }
+    }
+
 
 }
 

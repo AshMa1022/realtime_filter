@@ -35,22 +35,26 @@ void MainWindow::initialize() {
     QLabel *filters_label = new QLabel(); // Filters label
     filters_label->setText("Filters");
     filters_label->setFont(font);
-    QLabel *near_label = new QLabel(); // Near plane label
-    near_label->setText("Near Plane:");
-    QLabel *far_label = new QLabel(); // Far plane label
-    far_label->setText("Far Plane:");
+    QLabel *shader = new QLabel(); // Filters label
+    shader->setText("Shader");
+    shader->setFont(font);
+
 
 
 
     // Create checkbox for per-pixel filter
     filter1 = new QCheckBox();
-    filter1->setText(QStringLiteral("Per-Pixel Filter"));
+    filter1->setText(QStringLiteral("Blur"));
     filter1->setChecked(false);
 
     // Create checkbox for kernel-based filter
     filter2 = new QCheckBox();
-    filter2->setText(QStringLiteral("Kernel-Based Filter"));
+    filter2->setText(QStringLiteral("Pixelation"));
     filter2->setChecked(false);
+
+    shader1 = new QCheckBox();
+    shader1->setText(QStringLiteral("Cel Shading"));
+    shader1->setChecked(false);
 
     // Create file uploader for scene file
     uploadFile = new QPushButton();
@@ -58,54 +62,13 @@ void MainWindow::initialize() {
 
 
 
-    // Creates the boxes containing the camera sliders and number boxes
-    QGroupBox *nearLayout = new QGroupBox(); // horizonal near slider alignment
-    QHBoxLayout *lnear = new QHBoxLayout();
-    QGroupBox *farLayout = new QGroupBox(); // horizonal far slider alignment
-    QHBoxLayout *lfar = new QHBoxLayout();
 
-    // Create slider controls to control near/far planes
-    nearSlider = new QSlider(Qt::Orientation::Horizontal); // Near plane slider
-    nearSlider->setTickInterval(1);
-    nearSlider->setMinimum(1);
-    nearSlider->setMaximum(1000);
-    nearSlider->setValue(10);
-
-    nearBox = new QDoubleSpinBox();
-    nearBox->setMinimum(0.01f);
-    nearBox->setMaximum(10.f);
-    nearBox->setSingleStep(0.1f);
-    nearBox->setValue(0.1f);
-
-    farSlider = new QSlider(Qt::Orientation::Horizontal); // Far plane slider
-    farSlider->setTickInterval(1);
-    farSlider->setMinimum(1000);
-    farSlider->setMaximum(10000);
-    farSlider->setValue(10000);
-
-    farBox = new QDoubleSpinBox();
-    farBox->setMinimum(10.f);
-    farBox->setMaximum(100.f);
-    farBox->setSingleStep(0.1f);
-    farBox->setValue(100.f);
-
-    // Adds the slider and number box to the parameter layouts
-    lnear->addWidget(nearSlider);
-    lnear->addWidget(nearBox);
-    nearLayout->setLayout(lnear);
-
-    lfar->addWidget(farSlider);
-    lfar->addWidget(farBox);
-    farLayout->setLayout(lfar);
 
 
 
     vLayout->addWidget(uploadFile);
-    vLayout->addWidget(camera_label);
-    vLayout->addWidget(near_label);
-    vLayout->addWidget(nearLayout);
-    vLayout->addWidget(far_label);
-    vLayout->addWidget(farLayout);
+    vLayout->addWidget(shader);
+    vLayout->addWidget(shader1);
     vLayout->addWidget(filters_label);
     vLayout->addWidget(filter1);
     vLayout->addWidget(filter2);
@@ -115,8 +78,6 @@ void MainWindow::initialize() {
 
 
     // Set default values for near and far planes
-    onValChangeNearBox(0.1f);
-    onValChangeFarBox(10.f);
 }
 
 void MainWindow::finish() {
@@ -128,8 +89,11 @@ void MainWindow::connectUIElements() {
     connectPerPixelFilter();
     connectKernelBasedFilter();
     connectUploadFile();
-    connectNear();
-    connectFar();
+    connectCel();
+}
+
+void MainWindow::connectCel() {
+    connect(shader1, &QCheckBox::clicked, this, &MainWindow::onCel);
 }
 
 void MainWindow::connectPerPixelFilter() {
@@ -144,20 +108,10 @@ void MainWindow::connectUploadFile() {
     connect(uploadFile, &QPushButton::clicked, this, &MainWindow::onUploadFile);
 }
 
-
-
-void MainWindow::connectNear() {
-    connect(nearSlider, &QSlider::valueChanged, this, &MainWindow::onValChangeNearSlider);
-    connect(nearBox, static_cast<void(QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged),
-            this, &MainWindow::onValChangeNearBox);
+void MainWindow::onCel() {
+    settings.cel = !settings.cel;
+    realtime->settingsChanged();
 }
-
-void MainWindow::connectFar() {
-    connect(farSlider, &QSlider::valueChanged, this, &MainWindow::onValChangeFarSlider);
-    connect(farBox, static_cast<void(QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged),
-            this, &MainWindow::onValChangeFarBox);
-}
-
 
 void MainWindow::onPerPixelFilter() {
     settings.perPixelFilter = !settings.perPixelFilter;
@@ -212,31 +166,4 @@ void MainWindow::onUploadFile() {
 //}
 
 
-void MainWindow::onValChangeNearSlider(int newValue) {
-    //nearSlider->setValue(newValue);
-    nearBox->setValue(newValue/100.f);
-    settings.nearPlane = nearBox->value();
-    realtime->settingsChanged();
-}
-
-void MainWindow::onValChangeFarSlider(int newValue) {
-    //farSlider->setValue(newValue);
-    farBox->setValue(newValue/100.f);
-    settings.farPlane = farBox->value();
-    realtime->settingsChanged();
-}
-
-void MainWindow::onValChangeNearBox(double newValue) {
-    nearSlider->setValue(int(newValue*100.f));
-    //nearBox->setValue(newValue);
-    settings.nearPlane = nearBox->value();
-    realtime->settingsChanged();
-}
-
-void MainWindow::onValChangeFarBox(double newValue) {
-    farSlider->setValue(int(newValue*100.f));
-    //farBox->setValue(newValue);
-    settings.farPlane = farBox->value();
-    realtime->settingsChanged();
-}
 

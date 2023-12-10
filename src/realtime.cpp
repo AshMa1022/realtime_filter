@@ -31,9 +31,10 @@ void Realtime::finish() {
     this->makeCurrent();
 
     // Students: anything requiring OpenGL calls when the program exits should be done here];
-    glDeleteBuffers(4,&m_vbos[0]);
-    glDeleteVertexArrays(4,&m_vaos[0]);
+    glDeleteBuffers(5,&m_vbos[0]);
+    glDeleteVertexArrays(5,&m_vaos[0]);
     glDeleteTextures(1,&m_fbo_texture);
+    glDeleteTextures(1,&m_cake);
     glDeleteRenderbuffers(1,&m_fbo_renderbuffer);
     glDeleteFramebuffers(1,&m_fbo);
     glDeleteProgram(m_shader);
@@ -42,18 +43,23 @@ void Realtime::finish() {
 
     this->doneCurrent();
 }
-void Realtime::bindObj(){
-    if(obj.loadOBJ("/Users/ash/Desktop/CS1230/Realtime_filter/cakii.obj")){
+/**
+ * @brief Realtime::bindObj: helper method to bind the mesh
+ * @param index:vbo/vao index
+ * @param obj: obj instance to load and parse vertex
+ * @param vertex: vertex that stored each mesh's vertex/normal/uv coord
+ * @param path: path of the obj file
+ */
+void Realtime::bindObj(int index,Object &obj,std::vector<GLfloat> &vertex,const char* path){
+    if(obj.loadOBJ(path)){
         glClearColor(0.f,0.f,0.f,0.f); //clear the state
-        m_vbos[0] = 0;
-        glGenBuffers(1,&m_vbos[0]);
-        glBindBuffer(GL_ARRAY_BUFFER,m_vbos[0]);
-        obj_vertex = obj.out_vertices;
-        sphere.updateParam(5,5);
-        sphere_vertex=sphere.generateShape();
-        glBufferData(GL_ARRAY_BUFFER,sizeof(GLfloat) *obj_vertex.size(),obj_vertex.data(),GL_STATIC_DRAW);
-        glGenVertexArrays(1,&m_vaos[0]);
-        glBindVertexArray(m_vaos[0]);
+        m_vbos[index] = 0;
+        glGenBuffers(1,&m_vbos[index]);
+        glBindBuffer(GL_ARRAY_BUFFER,m_vbos[index]);
+        vertex = obj.out_vertices;
+        glBufferData(GL_ARRAY_BUFFER,sizeof(GLfloat) *vertex.size(),vertex.data(),GL_STATIC_DRAW);
+        glGenVertexArrays(1,&m_vaos[index]);
+        glBindVertexArray(m_vaos[index]);
 
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8 *sizeof(GL_FLOAT),0);
@@ -69,6 +75,10 @@ void Realtime::bindObj(){
     }
 
 }
+
+/**
+ * @brief Realtime::makeFBO: helper method generate FBO for post-processing filter
+ */
 void Realtime::makeFBO(){
     //Task 19: Generate and bind an empty texture, set its min/mag filter interpolation, then unbind
     glGenTextures(1,&m_fbo_texture);
@@ -126,7 +136,7 @@ void Realtime::initializeGL() {
     m_shader = ShaderLoader::createShaderProgram(":/resources/shaders/default.vert",":/resources/shaders/default.frag");
     m_filter = ShaderLoader::createShaderProgram(":/resources/shaders/texture.vert",":/resources/shaders/texture.frag");
 
-
+    //load the cake texture
         // Prepare filepath
         QString kitten_filepath = QString("/Users/ash/Desktop/CS1230/Realtime_filter/resources/images/cakiiii.png");
 
@@ -158,7 +168,10 @@ void Realtime::initializeGL() {
         glUseProgram(m_shader);
         glUniform1i(glGetUniformLocation(m_shader,"samp"),0);
         glUseProgram(0);
-    bindObj();
+
+    bindObj(0,obj,obj_vertex,"/Users/ash/Desktop/CS1230/Realtime_filter/cakii.obj");
+    bindObj(1,candle,candle_vertex,"/Users/ash/Desktop/CS1230/Realtime_filter/candle.obj");
+
     std::vector<GLfloat> fullscreen_quad_data =
         { //     POSITIONS    //
             -1.f,  1.f, 0.0f,
@@ -193,6 +206,10 @@ void Realtime::initializeGL() {
 
 }
 
+/**
+ * @brief Realtime::drawText: helper method passin all the needed parameter for FBO
+ * @param texture: in this case always the empty texture.
+ */
 void Realtime::drawText(GLuint texture){
     glBindFramebuffer(GL_FRAMEBUFFER,m_defaultFBO);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -206,7 +223,7 @@ void Realtime::drawText(GLuint texture){
     glBindTexture(GL_TEXTURE_2D,texture);
     glUniform1i(glGetUniformLocation(m_filter,"invert"),invert);
     glUniform1i(glGetUniformLocation(m_filter,"gray"),gray);
-    glUniform1i(glGetUniformLocation(m_filter,"sharpe"),sharpe);
+    glUniform1i(glGetUniformLocation(m_filter,"pixel"),pixel);
     glUniform1i(glGetUniformLocation(m_filter,"blur"),blur);
     glUniform1f(glGetUniformLocation(m_filter,"width"),1.f/(size().width() * m_devicePixelRatio));
     glUniform1f(glGetUniformLocation(m_filter,"height"),1.f/(size().height() * m_devicePixelRatio));
@@ -224,17 +241,24 @@ void Realtime::paintGL() {
     glViewport(0,0,size().width() * m_devicePixelRatio,size().height() * m_devicePixelRatio);
     glClearColor(0.7f, 0.7f, 1.0f, 1.0f); // Blue background
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    if(initialized){
     glUseProgram(m_shader);
+    glUniform1i(glGetUniformLocation(m_shader,"cel_shading"),cel_shading);
 
     // Bind Sphere Vertex Data
     for(int i=0; i< shapes.size();i++){
 
-//        m_model = settings.m_data.shapes[i].ctm;
         m_shininess = settings.m_data.shapes[i].primitive.material.shininess;
-        glBindVertexArray(m_vaos[0]);
         std::vector<float> vertex;
-        vertex = obj_vertex;
-
+        std::cout<<shapes[i].primitive.meshfile<<std::endl;
+        if(shapes[i].primitive.meshfile=="/Users/ash/Desktop/CS1230/caki"){
+            vertex=obj_vertex;
+            glBindVertexArray(m_vaos[0]);
+        }
+        else if(shapes[i].primitive.meshfile=="/Users/ash/Desktop/CS1230/candle"){
+            vertex=candle_vertex;
+            glBindVertexArray(m_vaos[1]);
+        }
 
         glUniformMatrix4fv(glGetUniformLocation(m_shader,"model"),1,GL_FALSE,&m_model[0][0]);
         glUniformMatrix4fv(glGetUniformLocation(m_shader,"view"),1,GL_FALSE,&m_view[0][0]);
@@ -323,6 +347,7 @@ void Realtime::paintGL() {
     }
     glUseProgram(0);
     drawText(m_fbo_texture);
+    }
 
 }
 
@@ -361,7 +386,7 @@ void Realtime::sceneChanged() {
     m_kd =globalData.kd;
     initialized = true;
     cout=0;
-    m_model = settings.m_data.shapes[0].ctm;
+    m_model= glm::mat4(1.f);
 
 }
 
@@ -371,10 +396,9 @@ void Realtime::settingsChanged() {
 
         update(); // asks for a PaintGL() call to occur
         m_proj =glm::perspective(glm::radians(45.0),1.0 * width() / height(),0.01,100.0);
-//                 cam.getProjection(settings.nearPlane,settings.farPlane,
-//                                   size().width() * m_devicePixelRatio,size().height() * m_devicePixelRatio);
-        gray =(settings.kernelBasedFilter==true)?true:false;
-        invert =(settings.perPixelFilter==true)?true:false;
+        pixel =(settings.kernelBasedFilter==true)?true:false;
+        blur =(settings.perPixelFilter==true)?true:false;
+        cel_shading =(settings.cel==true)?true:false;
 
     }
 
@@ -416,10 +440,8 @@ void Realtime::mouseMoveEvent(QMouseEvent *event) {
         float angleX = static_cast<float>(deltaY)*0.5 ; // or -deltaY, depending on your coordinate system
         float angleY = static_cast<float>(deltaX)*0.5 ; // or -deltaX
 
-        // Apply rotations to the model matrix
-/*        m_model = glm::rotate(m_model, glm::radians(angleX), glm::vec3(1.0f, 0.0f, 0.0f));*/
         m_model = glm::rotate(m_model, glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
-        std::cout<<m_model[0][0]<<std::endl;
+//        m_view = cam.rotateX(angleX);
         update(); // asks for a PaintGL() call to occur
     }
 }
