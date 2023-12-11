@@ -7,6 +7,7 @@
 #include <iostream>
 #include "settings.h"
 #include "camera.h"
+#include <chrono>
 #include "glm/gtc/constants.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtx/transform.hpp"
@@ -39,6 +40,7 @@ void Realtime::finish() {
     glDeleteFramebuffers(1,&m_fbo);
     glDeleteProgram(m_shader);
     glDeleteProgram(m_filter);
+    glDeleteProgram(m_particle);
 
 
     this->doneCurrent();
@@ -128,13 +130,15 @@ void Realtime::initializeGL() {
     // Allows OpenGL to draw objects appropriately on top of one another
     glEnable(GL_DEPTH_TEST);
     // Tells OpenGL to only draw the front face
-    glEnable(GL_CULL_FACE);
+//    glEnable(GL_CULL_FACE);
     // Tells OpenGL how big the screen is
     glViewport(0, 0, size().width() * m_devicePixelRatio, size().height() * m_devicePixelRatio);
 
     // Students: anything requiring OpenGL calls when the program starts should be done here
     m_shader = ShaderLoader::createShaderProgram(":/resources/shaders/default.vert",":/resources/shaders/default.frag");
     m_filter = ShaderLoader::createShaderProgram(":/resources/shaders/texture.vert",":/resources/shaders/texture.frag");
+    m_particle = ShaderLoader::createShaderProgram(":/resources/shaders/particle.vert",":/resources/shaders/particle.frag");
+
 
     //load the cake texture
         // Prepare filepath
@@ -171,6 +175,8 @@ void Realtime::initializeGL() {
 
     bindObj(0,obj,obj_vertex,"/Users/ash/Desktop/CS1230/Realtime_filter/cakii.obj");
     bindObj(1,candle,candle_vertex,"/Users/ash/Desktop/CS1230/Realtime_filter/candle.obj");
+
+    part = Particles(100,m_vbos[3],m_vaos[3]);
 
     std::vector<GLfloat> fullscreen_quad_data =
         { //     POSITIONS    //
@@ -225,6 +231,7 @@ void Realtime::drawText(GLuint texture){
     glUniform1i(glGetUniformLocation(m_filter,"gray"),gray);
     glUniform1i(glGetUniformLocation(m_filter,"pixel"),pixel);
     glUniform1i(glGetUniformLocation(m_filter,"blur"),blur);
+    glUniform1i(glGetUniformLocation(m_filter,"dith"),settings.dith);
     glUniform1f(glGetUniformLocation(m_filter,"width"),1.f/(size().width() * m_devicePixelRatio));
     glUniform1f(glGetUniformLocation(m_filter,"height"),1.f/(size().height() * m_devicePixelRatio));
     glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -239,18 +246,20 @@ void Realtime::drawText(GLuint texture){
 void Realtime::paintGL() {
     glBindFramebuffer(GL_FRAMEBUFFER,m_fbo);
     glViewport(0,0,size().width() * m_devicePixelRatio,size().height() * m_devicePixelRatio);
-    glClearColor(0.7f, 0.7f, 1.0f, 1.0f); // Blue background
+    glClearColor(0.176, 0.173, 0.251, 1.0f); // Blue background
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     if(initialized){
+    auto currentFrameTime = std::chrono::high_resolution_clock::now();
+    float deltaTime = std::chrono::duration<float, std::chrono::seconds::period>(currentFrameTime - lastFrameTime).count();
+    lastFrameTime = currentFrameTime;
     glUseProgram(m_shader);
     glUniform1i(glGetUniformLocation(m_shader,"cel_shading"),cel_shading);
 
-    // Bind Sphere Vertex Data
+//    // Bind Sphere Vertex Data
     for(int i=0; i< shapes.size();i++){
 
         m_shininess = settings.m_data.shapes[i].primitive.material.shininess;
         std::vector<float> vertex;
-        std::cout<<shapes[i].primitive.meshfile<<std::endl;
         if(shapes[i].primitive.meshfile=="/Users/ash/Desktop/CS1230/caki"){
             vertex=obj_vertex;
             glBindVertexArray(m_vaos[0]);
@@ -331,6 +340,7 @@ void Realtime::paintGL() {
         // Task 14: pass shininess, m_ks, and world-space camera position
         glUniform1f(glGetUniformLocation(m_shader,"m_ks"),m_ks);
         glUniform1f(glGetUniformLocation(m_shader,"m_shininess"),m_shininess);
+        glUniform1i(glGetUniformLocation(m_shader,"part"),false);
 
         glm::vec4 cameraPosition = glm::vec4(glm::vec3(glm::inverse(m_view)[3]),1.0);
         glUniform4fv(glGetUniformLocation(m_shader,"cam_pos"),1,&cameraPosition[0]);
@@ -345,7 +355,13 @@ void Realtime::paintGL() {
 
 
     }
+    if(settings.part){
+        part.update(deltaTime);
+        part.render(m_shader,m_model,m_view,m_proj,m_vaos[3]);
+    }
     glUseProgram(0);
+
+
     drawText(m_fbo_texture);
     }
 
@@ -387,6 +403,7 @@ void Realtime::sceneChanged() {
     initialized = true;
     cout=0;
     m_model= glm::mat4(1.f);
+    lastFrameTime = std::chrono::high_resolution_clock::now();
 
 }
 
@@ -399,6 +416,7 @@ void Realtime::settingsChanged() {
         pixel =(settings.kernelBasedFilter==true)?true:false;
         blur =(settings.perPixelFilter==true)?true:false;
         cel_shading =(settings.cel==true)?true:false;
+
 
     }
 
@@ -450,6 +468,7 @@ void Realtime::timerEvent(QTimerEvent *event) {
     int elapsedms   = m_elapsedTimer.elapsed();
     float deltaTime = elapsedms * 0.001f;
     m_elapsedTimer.restart();
+
 
     // Use deltaTime and m_keyMap here to move around
 

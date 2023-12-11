@@ -855,6 +855,7 @@
  mdp:/Users/ash/Desktop/CS1230/Realtime_filter/glm/vector_relational.hpp
  mdp:/Users/ash/Desktop/CS1230/Realtime_filter/src/camera.h
  mdp:/Users/ash/Desktop/CS1230/Realtime_filter/src/object.h
+ mdp:/Users/ash/Desktop/CS1230/Realtime_filter/src/particle.h
  mdp:/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.h
  mdp:/Users/ash/Desktop/CS1230/Realtime_filter/src/shaderloader.h
  mdp:/Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.h
@@ -1049,7 +1050,6 @@
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.cpp
 /Users/ash/Desktop/CS1230/Realtime_filter/src/settings.h
 /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.cpp
-/Users/ash/Desktop/CS1230/Realtime_filter/src/camera.cpp
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp
  mmc:Q_OBJECT
  mdp:/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp
@@ -1820,5 +1820,8 @@
  mdp:/Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h
  mdp:/Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+/Users/ash/Desktop/CS1230/Realtime_filter/src/camera.cpp
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenedata.h
+/Users/ash/Desktop/CS1230/Realtime_filter/src/particle.h
 /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenefilereader.cpp
+/Users/ash/Desktop/CS1230/Realtime_filter/src/particle.cpp

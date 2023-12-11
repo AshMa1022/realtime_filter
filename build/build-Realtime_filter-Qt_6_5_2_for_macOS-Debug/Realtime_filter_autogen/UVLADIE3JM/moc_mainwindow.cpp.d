@@ -845,6 +845,7 @@
   /Users/ash/Desktop/CS1230/Realtime_filter/glm/vector_relational.hpp \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/camera.h \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/object.h \
+  /Users/ash/Desktop/CS1230/Realtime_filter/src/particle.h \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.h \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/shaderloader.h \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.h \

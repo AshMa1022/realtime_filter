@@ -20,6 +20,8 @@ public:
 private:
     void connectUIElements();
     void connectCel();
+    void connectPart();
+    void connectDith();
     void connectPerPixelFilter();
     void connectKernelBasedFilter();
     void connectUploadFile();
@@ -30,7 +32,9 @@ private:
     AspectRatioWidget *aspectRatioWidget;
     QCheckBox *filter1;
     QCheckBox *filter2;
+    QCheckBox *filter3;
     QCheckBox *shader1;
+    QCheckBox *part;
     QPushButton *uploadFile;
     QPushButton *saveImage;
     QSlider *p1Slider;
@@ -48,6 +52,8 @@ private slots:
     void onPerPixelFilter();
     void onKernelBasedFilter();
     void onCel();
+    void onDith();
     void onUploadFile();
+    void onPart();
 
 };

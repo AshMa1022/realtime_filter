@@ -26,7 +26,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 50,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
@@ -38,7 +38,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 52,
+				"line" : 53,
 				"parent" : 0
 			}
 		]
@@ -49,7 +49,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-Wno-deprecated-volatile -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+					"fragment" : "-Wno-deprecated-volatile -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
 				},
 				{
 					"fragment" : "-std=gnu++20"
@@ -58,14 +58,14 @@
 			"includes" : 
 			[
 				{
-					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug"
+					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release"
 				},
 				{
 					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/include"
+					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/include"
 				},
 				{
 					"backtrace" : 2,
@@ -102,20 +102,20 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+					"fragment" : "-O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug"
+					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release"
 				},
 				{
 					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/include"
+					"path" : "/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/include"
 				},
 				{
 					"backtrace" : 2,
@@ -144,11 +144,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "StaticGLEW_autogen::@6890427a1f51a3e7e1df"
+			"id" : "StaticGLEW_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "StaticGLEW_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "StaticGLEW_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "StaticGLEW::@6890427a1f51a3e7e1df",
@@ -190,7 +190,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/mocs_compilation.cpp",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -202,13 +202,13 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/timestamp",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/timestamp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/StaticGLEW_autogen/timestamp.rule",
+			"path" : "build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/timestamp.rule",
 			"sourceGroupIndex" : 2
 		}
 	],

@@ -11,6 +11,8 @@ struct Settings {
     bool perPixelFilter = false;
     bool kernelBasedFilter = false;
     bool cel;
+    bool part=false;
+    bool dith=false;
     RenderData m_data;
 };
 

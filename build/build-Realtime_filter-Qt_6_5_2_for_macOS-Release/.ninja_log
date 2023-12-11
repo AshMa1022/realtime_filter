@@ -1,0 +1,6 @@
+# ninja log v5
+0	75	1702258063487868846	StaticGLEW_autogen/timestamp	afdec1d66a258cdb
+0	75	1702258063487868846	StaticGLEW_autogen/mocs_compilation.cpp	afdec1d66a258cdb
+0	75	1702258063487868846	/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/timestamp	afdec1d66a258cdb
+0	75	1702258063487868846	/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Release/StaticGLEW_autogen/mocs_compilation.cpp	afdec1d66a258cdb
+76	128	1702258063546182351	CMakeFiles/StaticGLEW.dir/StaticGLEW_autogen/mocs_compilation.cpp.o	44faa94b61bfca2d

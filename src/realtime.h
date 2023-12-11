@@ -15,6 +15,7 @@
 #include "camera.h"
 #include "object.h"
 #include "sphere.h"
+#include "particle.h"
 
 #include "shaderloader.h"
 #include "../projects-realtime-AshMa1022/src/utils/sceneparser.h"
@@ -61,6 +62,9 @@ private:
     Camera cam;
     GLuint m_shader; // Stores id of shader program
     GLuint m_filter;
+    GLuint m_particle;
+
+    Particles part;
 
 
 
@@ -110,6 +114,8 @@ private:
     void drawText(GLuint texture);
     void makeFBO();
     void bindObj(int index,Object &obj,std::vector<float> &vertex,const char* path);
+
+    std::chrono::high_resolution_clock::time_point lastFrameTime;
 
 
 };

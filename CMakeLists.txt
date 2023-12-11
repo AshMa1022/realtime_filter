@@ -39,6 +39,7 @@ add_executable(${PROJECT_NAME}
     ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
 src/settings.h src/settings.cpp
 src/sphere.h src/sphere.cpp
+src/particle.h src/particle.cpp
 
 
 )
@@ -70,6 +71,13 @@ qt6_add_resources(${PROJECT_NAME} "Resources"
         resources/shaders/default.vert
         resources/shaders/texture.vert
         resources/shaders/texture.frag
+        resources/shaders/particle.vert
+        resources/shaders/particle.frag
+)
+
+target_sources(realtime_filter_other_files
+  PRIVATE
+
 )
 
 #target_sources(realtime_filter_other_files

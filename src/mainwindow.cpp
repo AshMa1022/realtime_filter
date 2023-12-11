@@ -38,6 +38,9 @@ void MainWindow::initialize() {
     QLabel *shader = new QLabel(); // Filters label
     shader->setText("Shader");
     shader->setFont(font);
+    QLabel *effect = new QLabel(); // Filters label
+    shader->setText("Effect");
+    shader->setFont(font);
 
 
 
@@ -52,9 +55,20 @@ void MainWindow::initialize() {
     filter2->setText(QStringLiteral("Pixelation"));
     filter2->setChecked(false);
 
+
+    filter3 = new QCheckBox();
+    filter3->setText(QStringLiteral("Dither"));
+    filter3->setChecked(false);
+
+
+
     shader1 = new QCheckBox();
     shader1->setText(QStringLiteral("Cel Shading"));
     shader1->setChecked(false);
+
+    part = new QCheckBox();
+    part->setText(QStringLiteral("Ribbon Fragments"));
+    part->setChecked(false);
 
     // Create file uploader for scene file
     uploadFile = new QPushButton();
@@ -72,6 +86,9 @@ void MainWindow::initialize() {
     vLayout->addWidget(filters_label);
     vLayout->addWidget(filter1);
     vLayout->addWidget(filter2);
+    vLayout->addWidget(filter3);
+    vLayout->addWidget(effect);
+    vLayout->addWidget(part);
     // Extra Credit:
 
     connectUIElements();
@@ -90,6 +107,8 @@ void MainWindow::connectUIElements() {
     connectKernelBasedFilter();
     connectUploadFile();
     connectCel();
+    connectPart();
+    connectDith();
 }
 
 void MainWindow::connectCel() {
@@ -103,13 +122,27 @@ void MainWindow::connectPerPixelFilter() {
 void MainWindow::connectKernelBasedFilter() {
     connect(filter2, &QCheckBox::clicked, this, &MainWindow::onKernelBasedFilter);
 }
+void MainWindow::connectDith() {
+    connect(filter3, &QCheckBox::clicked, this, &MainWindow::onDith);
+}
 
 void MainWindow::connectUploadFile() {
     connect(uploadFile, &QPushButton::clicked, this, &MainWindow::onUploadFile);
 }
+void MainWindow::connectPart() {
+    connect(part, &QCheckBox::clicked, this, &MainWindow::onPart);
+}
 
 void MainWindow::onCel() {
     settings.cel = !settings.cel;
+    realtime->settingsChanged();
+}
+void MainWindow::onDith() {
+    settings.dith = !settings.dith;
+    realtime->settingsChanged();
+}
+void MainWindow::onPart() {
+    settings.part = !settings.part;
     realtime->settingsChanged();
 }
 
