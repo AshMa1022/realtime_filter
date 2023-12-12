@@ -1,18 +1,15 @@
 #version 330 core
-// Task 5: declare "in" variables for the world-space position and normal,
-//         received post-interpolation from the vertex shader
 in vec3 position;
 in vec3 normal;
 in vec2 text;
-// Task 10: declare an out vec4 for your output color
+
 out vec4 color;
 
-// Task 12: declare relevant uniform(s) here, for ambient lighting
-uniform bool part;
+
+uniform bool part; // fallen frag
 uniform float m_ka;
 uniform sampler2D samp;
 uniform vec3 material[3];
-// Task 13: declare relevant uniform(s) here, for diffuse lighting
 uniform float m_kd;
 uniform vec4 light_pos[10]; //if directional then light_pos represent light_dir
 uniform vec4 light_col[10];
@@ -23,14 +20,10 @@ uniform vec3 light_func[10];
 uniform bool cel_shading;
 
 uniform int num_l;
-// Task 14: declare relevant uniform(s) here, for specular lighting
 uniform float m_ks;
 uniform float m_shininess;
 uniform vec4 cam_pos;
 
-float rand(vec2 co) {
-    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);
-}
 
 
 
@@ -45,16 +38,16 @@ void main() {
                 float dis = distance(light_pos[i],vec4(position,1.0));
                 vec3 function = light_func[i];
                 float a =1.0 /(function[0] + function[1] * dis + function[2] *dis * dis);
+
                 att = (a>1)? 1:a;
                 // Ambient
                 float ambientStrength = 0.1;
-                vec3 ambient = ambientStrength * vec3(light_col[i]);
+                vec3 ambient = ambientStrength * vec3(light_col[i]) * m_ka;
 
                 // Diffuse
                 vec3 norm = normalize(normal);
                 vec3 lightDir = normalize(vec3(light_pos[i]) - position);
                 float diff = max(dot(norm, lightDir), 0.0);
-
                 // Accumulate ambient and diffuse contributions
                 accumulatedAmbient += ambient;
                 accumulatedDiffuse += att*diff * vec3(light_col[i]);
@@ -77,7 +70,6 @@ void main() {
             vec3 final = vec3(texture(samp,text)) *(accumulatedAmbient + accumulatedDiffuse);
             color = vec4(final,1.0);
         }
-    //    // Remember that you need to renormalize vectors here if you want them to be normalized
 
     else{
         color =vec4(0,0,0,0);
@@ -96,7 +88,7 @@ void main() {
             else{
                 float dis = distance(light_pos[i],vec4(position,1.0));
                 vec3 function = light_func[i];
-                float a =1.0 /*/(function[0] + function[1] * dis + function[2] *dis * dis)*/;
+                float a =1.0 /(function[0] + function[1] * dis + function[2] *dis * dis);
                 att = (a>1)? 1:a;
                 light_dir =normalize(light_pos[i]-vec4(position,1.0));
 

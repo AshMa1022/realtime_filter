@@ -227,7 +227,7 @@ void Realtime::paintGL() {
             part.update(deltaTime);
             part.render(m_shader,m_model,m_view,m_proj,m_vaos[3]);
         }
-        float angleY = static_cast<float>(deltaTime)*3 ; // or -deltaX
+        float angleY = static_cast<float>(deltaTime)*15 ; // or -deltaX
         m_model = glm::rotate(m_model, glm::radians(angleY), glm::vec3(0.0f, 1.0f, 0.0f));
         glUseProgram(0);
         drawText(m_fbo_texture);
