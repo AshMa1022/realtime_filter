@@ -1,17 +1,12 @@
-/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/UVLADIE3JM/moc_mainwindow.cpp: /Users/ash/Desktop/CS1230/Realtime_filter/src/mainwindow.h \
+/Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/OWQMYEJWPR/moc_aspectratiowidget.cpp: /Users/ash/Desktop/CS1230/Realtime_filter/src/utils/aspectratiowidget/aspectratiowidget.hpp \
   /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/realtime_filter_autogen/moc_predefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/TargetConditionals.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/arch.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
@@ -210,7 +205,6 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bit/byteswap.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bits \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/day.h \
@@ -269,23 +263,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config_site \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_negate.h \
@@ -356,7 +334,6 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/sortable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__mbstate_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/addressof.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocate_at_least.h \
@@ -380,7 +357,6 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/voidify.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__mutex_base \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__numeric/accumulate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
@@ -556,17 +532,13 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/bit \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cctype \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cerrno \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/compare \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/concepts \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdio \
@@ -578,44 +550,29 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/initializer_list \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iosfwd \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/list \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/memory \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/new \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/optional \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ratio \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/streambuf \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string_view \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/system_error \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/typeinfo \
@@ -626,17 +583,12 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/version \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/libkern/_OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/libkern/arm/OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/nl_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/sched.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_posix_availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
@@ -651,211 +603,27 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blkcnt_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blksize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_caddr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_clock_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_dev_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_errno_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_clr.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_copy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_def.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_isset.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_set.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_setsize.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_zero.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_gid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_id_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_in_addr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_in_port_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ino64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ino_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_intptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_key_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mach_port_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mode_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_nlink_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_null.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_off_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_pid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigset_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_size_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ssize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_suseconds_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_timespec.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_char.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_short.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uintptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_useconds_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/appleapiopts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/qos.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glew/include/GL/glew.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/common.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/_fixes.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/_vectorize.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/compute_common.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/compute_vector_relational.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_common.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_exponential.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_geometric.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_integer.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_matrix.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_packing.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_trigonometric.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/func_vector_relational.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/qualifier.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/setup.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_half.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_half.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat2x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat2x2.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat2x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat2x3.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat2x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat2x4.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat3x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat3x2.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat3x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat3x3.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat3x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat3x4.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat4x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat4x2.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat4x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat4x3.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat4x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_mat4x4.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec1.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec1.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec2.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec3.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/detail/type_vec4.inl \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/exponential.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double2x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double2x2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double2x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double2x3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double2x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double2x4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double3x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double3x2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double3x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double3x3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double3x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double3x4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double4x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double4x2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double4x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double4x3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double4x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_double4x4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float2x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float2x2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float2x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float2x3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float2x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float2x4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float3x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float3x2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float3x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float3x3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float3x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float3x4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float4x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float4x2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float4x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float4x3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float4x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/matrix_float4x4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/scalar_int_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/scalar_uint_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_bool2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_bool2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_bool3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_bool3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_bool4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_bool4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_double2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_double2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_double3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_double3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_double4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_double4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_float2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_float2_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_float3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_float3_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_float4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_float4_precision.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_int2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_int2_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_int3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_int3_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_int4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_int4_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_uint2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_uint2_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_uint3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_uint3_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_uint4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/ext/vector_uint4_sized.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/fwd.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/geometric.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/glm.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/integer.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat2x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat2x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat2x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat3x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat3x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat3x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat4x2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat4x3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/mat4x4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/matrix.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/packing.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/simd/platform.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/trigonometric.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/vec2.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/vec3.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/vec4.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/glm/vector_relational.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/camera.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/object.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/particle.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/shaderloader.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/utils/aspectratiowidget/aspectratiowidget.hpp \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/utils/scenedata.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/utils/sceneparser.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QElapsedTimer \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QTextStream \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QTime \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
@@ -867,13 +635,11 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qatomic.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbytearray.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qcalendar.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h \
@@ -886,12 +652,8 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qdatetime.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qelapsedtimer.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qfile.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qfiledevice.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qfloat16.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qforeach.h \
@@ -901,13 +663,11 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qlocale.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h \
@@ -928,7 +688,6 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qset.h \
@@ -957,7 +716,6 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtnoop.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h \
@@ -973,7 +731,6 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/QSurfaceFormat \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
@@ -985,7 +742,6 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qicon.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qopengl.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
@@ -994,39 +750,18 @@
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qsurfaceformat.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qvalidator.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/Headers/QOpenGLWidget \
-  /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/Headers/qopenglwidget.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/Headers/qtopenglwidgetsexports.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtOpenGLWidgets.framework/Versions/A/Headers/qtopenglwidgetsglobal.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QBoxLayout \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QCheckBox \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QDoubleSpinBox \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QSlider \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QSpinBox \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qcheckbox.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qslider.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qspinbox.h \
-  /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/ash/Qt/6.5.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \

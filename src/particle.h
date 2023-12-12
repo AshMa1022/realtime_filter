@@ -14,10 +14,7 @@ class Particles
     struct Particle {
         glm::vec3 position=glm::vec3(0.f);
         glm::vec3 velocity;
-        glm::vec4 color;
         float lifespan;
-        bool alive=true;
-        float size;
     };
 public:
     Particles(int maxParticles);

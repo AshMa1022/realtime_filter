@@ -2,7 +2,7 @@
 #define SETTINGS_H
 
 #include <string>
-#include "../projects-realtime-AshMa1022/src/utils/sceneparser.h"
+#include "utils/sceneparser.h"
 
 struct Settings {
     std::string sceneFilePath;

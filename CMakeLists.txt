@@ -26,20 +26,25 @@ include_directories(src)
 # Specifies .cpp and .h files to be passed to the compiler
 add_executable(${PROJECT_NAME}
     src/main.cpp
-
-    src/realtime.cpp
     src/mainwindow.cpp
-
     src/mainwindow.h
-    src/realtime.h
     src/object.h src/object.cpp
     src/shaderloader.h
     src/camera.h src/camera.cpp
-    ../projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
-    ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
-src/settings.h src/settings.cpp
+    src/settings.h src/settings.cpp
+    src/particle.h src/particle.cpp
+    src/utils/scenedata.h
+    src/utils/scenefilereader.h
+    src/utils/sceneparser.h
+    src/utils/shaderloader.h
+    src/utils/aspectratiowidget/aspectratiowidget.hpp
+    src/utils/scenefilereader.cpp
+    src/utils/sceneparser.cpp
 
-src/particle.h src/particle.cpp
+    src/realtime/realtime.h
+    src/realtime/realtimehelper.cpp
+    src/realtime/realtime.cpp
+
 
 
 )
@@ -77,18 +82,6 @@ qt6_add_resources(${PROJECT_NAME} "Resources"
 
 )
 
-#target_sources(realtime_filter_other_files
-#  PRIVATE
-#  resources/shaders/texture.frag resources/shaders/texture.vert
-
-#)
-
-#target_sources(realtime_filter_other_files
-#  PRIVATE
-#  resources/shaders/texture.vert
-#  resources/shaders/texture.frag
-
-#)
 
 # GLEW: this provides support for Windows (including 64-bit)
 if (WIN32)

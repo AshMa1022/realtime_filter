@@ -7,7 +7,7 @@
 #include <QDoubleSpinBox>
 #include <QPushButton>
 #include "realtime.h"
-#include "../projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp"
+#include "utils/aspectratiowidget/aspectratiowidget.hpp"
 
 class MainWindow : public QWidget
 {

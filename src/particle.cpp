@@ -23,7 +23,6 @@ Particles::Particles(int maxParticles)
 
     for(auto &particle:particles){
         particle.position=glm::vec3(distr(eng),distr(eng),distr(eng));
-        particle.alive=true;
         particle.lifespan=distr3(eng);
         position.push_back(particle.position[0]);
         position.push_back(particle.position[1]);

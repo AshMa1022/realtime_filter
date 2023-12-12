@@ -8,8 +8,8 @@
 #include <QLabel>
 #include <QGroupBox>
 #include <iostream>
-#include <../projects-realtime-AshMa1022/src/utils/scenedata.h>
-#include "../projects-realtime-AshMa1022/src/utils/sceneparser.h"
+#include <utils/scenedata.h>
+#include "utils/sceneparser.h"
 
 
 void MainWindow::initialize() {

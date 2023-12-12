@@ -857,17 +857,20 @@ realtime_filter_autogen/timestamp: \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/object.h \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/particle.cpp \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/particle.h \
-	/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.cpp \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.h \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime/realtime.cpp \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime/realtime.h \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/realtime/realtimehelper.cpp \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.cpp \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.h \
 	/Users/ash/Desktop/CS1230/Realtime_filter/src/shaderloader.h \
-	/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp \
-	/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenedata.h \
-	/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenefilereader.cpp \
-	/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenefilereader.h \
-	/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.cpp \
-	/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.h \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/aspectratiowidget/aspectratiowidget.hpp \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/scenedata.h \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/scenefilereader.cpp \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/scenefilereader.h \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/sceneparser.cpp \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/sceneparser.h \
+	/Users/ash/Desktop/CS1230/Realtime_filter/src/utils/shaderloader.h \
 	/Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QElapsedTimer \
 	/Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
 	/Users/ash/Qt/6.5.2/macos/lib/QtCore.framework/Versions/A/Headers/QTextStream \

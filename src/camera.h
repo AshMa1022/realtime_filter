@@ -1,7 +1,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
-#include <../projects-realtime-AshMa1022/src/utils/scenedata.h>
+#include <utils/scenedata.h>
 #include <glm/glm.hpp>
 // A class representing a virtual camera.
 

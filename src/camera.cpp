@@ -1,6 +1,6 @@
 #include <stdexcept>
 #include "camera.h"
-#include "../projects-realtime-AshMa1022/src/utils/scenefilereader.h"
+#include "utils/scenefilereader.h"
 #include <glm/glm.hpp>
 #include <iostream>
 
