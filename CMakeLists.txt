@@ -69,16 +69,19 @@ qt6_add_resources(${PROJECT_NAME} "Resources"
     FILES
         resources/shaders/default.frag
         resources/shaders/default.vert
-        resources/shaders/texture.vert
         resources/shaders/texture.frag
-        resources/shaders/particle.vert
-        resources/shaders/particle.frag
-)
+        resources/shaders/texture.vert
 
-target_sources(realtime_filter_other_files
-  PRIVATE
+
+
 
 )
+
+#target_sources(realtime_filter_other_files
+#  PRIVATE
+#  resources/shaders/texture.frag resources/shaders/texture.vert
+
+#)
 
 #target_sources(realtime_filter_other_files
 #  PRIVATE

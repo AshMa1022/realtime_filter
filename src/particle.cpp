@@ -78,16 +78,8 @@ void Particles::update(float deltaTime) {
             particle.lifespan -= deltaTime;
             particle.velocity+=glm::vec3(0.0f,-1.f, 0.0f) * (float)deltaTime * 0.5f;
             particle.position += particle.velocity * deltaTime;
-            int baseIndex = cout * 9; // 3 vertices per triangle, 3 components per vertex
-            position[baseIndex] += particle.velocity[0] * deltaTime;
-            position[baseIndex + 1] += particle.velocity[1] * deltaTime;
-            position[baseIndex + 2] += particle.velocity[2] * deltaTime;
-            position[baseIndex + 3]  += particle.velocity[0] * deltaTime; // Adjust this for actual triangle shape
-            position[baseIndex + 4] += particle.velocity[1] * deltaTime; // Adjust Y for the second vertex
-            position[baseIndex + 5] += particle.velocity[2] * deltaTime;
-            position[baseIndex + 6] += particle.velocity[0] * deltaTime;  // Adjust X for the third vertex
-            position[baseIndex + 7] += particle.velocity[1] * deltaTime;
-            position[baseIndex + 8] += particle.velocity[2] * deltaTime;
+            int baseIndex = cout * 9;
+            setPosition(baseIndex,particle.velocity,deltaTime);
             if (particle.lifespan <= 0) {
                 renew(particle);
                 position[baseIndex] = particle.position[0];
@@ -99,12 +91,10 @@ void Particles::update(float deltaTime) {
                 position[baseIndex + 6] = particle.position[0];  // Adjust X for the third vertex
                 position[baseIndex + 7] = particle.position[1]+ distr2(eng);
                 position[baseIndex + 8] = particle.position[2];
-
             }
         }
         cout++;
     }
-    std::cout<<position[0]<<std::endl;
 
     // Update the buffer data
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
@@ -122,5 +112,17 @@ void Particles::render(GLuint shader, glm::mat4 m_model, glm::mat4 m_view, glm::
     glDrawArrays(GL_TRIANGLES, 0, position.size()/3); // 3 vertices per particle
     glBindVertexArray(0);
     glUseProgram(0);
+}
+
+void Particles::setPosition(int baseIndex, glm::vec3 v,float deltaTime){
+    position[baseIndex] += v[0] * deltaTime;
+    position[baseIndex + 1] += v[1] * deltaTime;
+    position[baseIndex + 2] += v[2] * deltaTime;
+    position[baseIndex + 3]  += v[0] * deltaTime;
+    position[baseIndex + 4] += v[1] * deltaTime;
+    position[baseIndex + 5] += v[2] * deltaTime;
+    position[baseIndex + 6] += v[0] * deltaTime;
+    position[baseIndex + 7] += v[1] * deltaTime;
+    position[baseIndex + 8] +=v[2] * deltaTime;
 }
 

@@ -34,11 +34,11 @@
       ]
     },
  {
-      "translate": [0, 0, 0],
+      "translate": [-3, 4, -1],
       "lights": [
         {
           "type": "point",
-          "color": [0.6, 0.1, 0.1],
+          "color": [0.7, 0.4, 0.4],
           "attenuationCoeff": [1, 0, 0]
         }
       ]

@@ -137,7 +137,6 @@ void Realtime::initializeGL() {
     // Students: anything requiring OpenGL calls when the program starts should be done here
     m_shader = ShaderLoader::createShaderProgram(":/resources/shaders/default.vert",":/resources/shaders/default.frag");
     m_filter = ShaderLoader::createShaderProgram(":/resources/shaders/texture.vert",":/resources/shaders/texture.frag");
-    m_particle = ShaderLoader::createShaderProgram(":/resources/shaders/particle.vert",":/resources/shaders/particle.frag");
 
 
     //load the cake texture
@@ -246,7 +245,7 @@ void Realtime::drawText(GLuint texture){
 void Realtime::paintGL() {
     glBindFramebuffer(GL_FRAMEBUFFER,m_fbo);
     glViewport(0,0,size().width() * m_devicePixelRatio,size().height() * m_devicePixelRatio);
-    glClearColor(0.176, 0.173, 0.251, 1.0f); // Blue background
+    glClearColor(1, 0.718, 0.718, 1.0f); // Blue background
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     if(initialized){
     auto currentFrameTime = std::chrono::high_resolution_clock::now();

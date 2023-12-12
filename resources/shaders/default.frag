@@ -60,9 +60,9 @@ void main() {
                 accumulatedDiffuse += att*diff * vec3(light_col[i]);
             }
 
-            if (length(accumulatedDiffuse) > 0.8)
+            if (length(accumulatedDiffuse) > 0.85)
                 accumulatedDiffuse = vec3(0.8);
-            else if (length(accumulatedDiffuse) > 0.65)
+            else if (length(accumulatedDiffuse) > 0.75)
                 accumulatedDiffuse = vec3(0.7);
             else if (length(accumulatedDiffuse) > 0.58)
                 accumulatedDiffuse = vec3(0.65);
@@ -96,7 +96,7 @@ void main() {
             else{
                 float dis = distance(light_pos[i],vec4(position,1.0));
                 vec3 function = light_func[i];
-                float a =1.0 /(function[0] + function[1] * dis + function[2] *dis * dis);
+                float a =1.0 /*/(function[0] + function[1] * dis + function[2] *dis * dis)*/;
                 att = (a>1)? 1:a;
                 light_dir =normalize(light_pos[i]-vec4(position,1.0));
 
@@ -123,7 +123,7 @@ void main() {
             float dott = dot(light_dir,normalize(vec4(normal,0.f)));
             dott = clamp(dott, 0.f, 1.f);
 
-            color += att* 0.8*m_kd * dott* vec4(material[1],1.f)* light_col[i]+ 0.2*(texture(samp, text)); // Diffuse component
+            color += att* 0.85*m_kd * dott* vec4(material[1],1.f)* light_col[i]+ 0.15*(texture(samp, text)); // Diffuse component
 
             vec4 dir_to_cam = normalize(cam_pos-vec4(position,1.0));
 

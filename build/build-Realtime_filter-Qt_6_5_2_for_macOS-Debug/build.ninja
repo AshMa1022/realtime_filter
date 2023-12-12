@@ -300,7 +300,7 @@ build StaticGLEW_autogen: phony CMakeFiles/StaticGLEW_autogen StaticGLEW_autogen
 #############################################
 # Custom command for .rcc/qrc_Resources.cpp
 
-build .rcc/qrc_Resources.cpp | ${cmake_ninja_workdir}.rcc/qrc_Resources.cpp: CUSTOM_COMMAND /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.frag /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.vert /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/texture.vert /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/texture.frag /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/particle.vert /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/particle.frag .rcc/Resources.qrc /Users/ash/Qt/6.5.2/macos/./libexec/rcc || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a realtime_filter_autogen realtime_filter_autogen_timestamp_deps
+build .rcc/qrc_Resources.cpp | ${cmake_ninja_workdir}.rcc/qrc_Resources.cpp: CUSTOM_COMMAND /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.frag /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/default.vert /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/texture.frag /Users/ash/Desktop/CS1230/Realtime_filter/resources/shaders/texture.vert .rcc/Resources.qrc /Users/ash/Qt/6.5.2/macos/./libexec/rcc || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a realtime_filter_autogen realtime_filter_autogen_timestamp_deps
   COMMAND = cd /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug && /Users/ash/Qt/6.5.2/macos/./libexec/rcc --output /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/qrc_Resources.cpp --name Resources /Users/ash/Desktop/CS1230/Realtime_filter/build/build-Realtime_filter-Qt_6_5_2_for_macOS-Debug/.rcc/Resources.qrc --no-zstd
   DESC = Running rcc for resource Resources
   restat = 1
@@ -329,7 +329,7 @@ build StaticGLEW_autogen/timestamp StaticGLEW_autogen/mocs_compilation.cpp | ${c
 #############################################
 # Phony custom command for CMakeFiles/realtime_filter_autogen_timestamp_deps
 
-build CMakeFiles/realtime_filter_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/realtime_filter_autogen_timestamp_deps: phony /Users/ash/Qt/6.5.2/macos/./libexec/moc /Users/ash/Qt/6.5.2/macos/./libexec/uic libStaticGLEW.a || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a
+build CMakeFiles/realtime_filter_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/realtime_filter_autogen_timestamp_deps: phony libStaticGLEW.a /Users/ash/Qt/6.5.2/macos/./libexec/uic /Users/ash/Qt/6.5.2/macos/./libexec/moc || StaticGLEW_autogen StaticGLEW_autogen_timestamp_deps libStaticGLEW.a
 
 
 #############################################
@@ -341,7 +341,7 @@ build CMakeFiles/realtime_filter_autogen | ${cmake_ninja_workdir}CMakeFiles/real
 #############################################
 # Phony custom command for CMakeFiles/StaticGLEW_autogen_timestamp_deps
 
-build CMakeFiles/StaticGLEW_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/StaticGLEW_autogen_timestamp_deps: phony /Users/ash/Qt/6.5.2/macos/./libexec/moc /Users/ash/Qt/6.5.2/macos/./libexec/uic
+build CMakeFiles/StaticGLEW_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/StaticGLEW_autogen_timestamp_deps: phony /Users/ash/Qt/6.5.2/macos/./libexec/uic /Users/ash/Qt/6.5.2/macos/./libexec/moc
 
 
 #############################################

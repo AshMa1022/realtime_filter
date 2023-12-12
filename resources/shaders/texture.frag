@@ -58,10 +58,7 @@ void main()
         fragColor = vec4(color, 1.0);
 
     }
-    // Task 33: Invert fragColor's r, g, and b color channels if your bool is true
-//    if(invert){
-////        fragColor = vec4(1.f)-fragColor;
-//    }
+
     if(pixel){
         float pix = 0.299 * fragColor[0] + 0.587 * fragColor[1] + 0.114 * fragColor[2];
         fragColor = vec4(vec3(pix),1);
@@ -82,8 +79,8 @@ void main()
         );
         vec3 col=texture(samp, vec2(uv)).rgb;
         if(pixel){
-            vec2 pixelatedCoords = floor(vec2(uv) / 0.005) * 0.005;
-            pixelatedCoords += 0.005 * 0.5;
+            vec2 pixelatedCoords = floor(vec2(uv) / 0.008) * 0.008;
+            pixelatedCoords += 0.008 * 0.5;
             col = texture(samp, pixelatedCoords).rgb;
         }
             float gray = 0.299 * col.r + 0.587 * col.g + 0.114 * col.b;

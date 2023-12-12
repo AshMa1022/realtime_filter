@@ -28,6 +28,7 @@ public:
                 glm::mat4 m_view,
                 glm::mat4 m_proj,
                 GLuint m_vao);
+    void setPosition(int index, glm::vec3 v,float dealtaTime);
 private:
     std::vector<Particle> particles;
     std::vector<GLfloat> position;
