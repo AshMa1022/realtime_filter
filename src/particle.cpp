@@ -2,7 +2,12 @@
 #include <iostream>
 #include <random>
 
-Particles::Particles(int maxParticles,GLuint &m_vbo,GLuint &m_vao)
+/**
+ * @brief Particles::Particles: the constructor of the particles(fallen fragments). Input the max particle, initiate all the particle(triangle)
+ * position,make and bind VBO and VAO.
+ * @param maxParticles: the maximum particle that will displayed in the screen
+ */
+Particles::Particles(int maxParticles)
 {
     particles.resize(maxParticles);
     std::random_device rd;  // Obtain a random number from hardware
@@ -57,6 +62,11 @@ Particles::Particles(int maxParticles,GLuint &m_vbo,GLuint &m_vao)
 }
 Particles::Particles(){}
 
+/**
+ * Renew the particle position/velocity/life span
+ * @brief Particles::renew
+ * @param particle
+ */
 void Particles::renew(Particle &particle) {
     std::random_device rd;  // Random
     std::mt19937 eng(rd());
@@ -65,16 +75,19 @@ void Particles::renew(Particle &particle) {
     particle.position = glm::vec3(distr2(eng),3,distr2(eng));
     particle.velocity = glm::vec3(0.f,-0.1f,0.f);
     particle.lifespan = distr(eng);
-    particle.alive = true;
 }
 
+/** Update position and velocity of the particle.
+ * @brief Particles::update
+ * @param deltaTime
+ */
 void Particles::update(float deltaTime) {
     int cout=0;
     std::random_device rd;
     std::mt19937 eng(rd());
     std::uniform_real_distribution<> distr2(-0.2, 0.2);
     for (auto &particle : particles) {
-        if (particle.alive) {
+        if (particle.lifespan >0) {
             particle.lifespan -= deltaTime;
             particle.velocity+=glm::vec3(0.0f,-1.f, 0.0f) * (float)deltaTime * 0.5f;
             particle.position += particle.velocity * deltaTime;

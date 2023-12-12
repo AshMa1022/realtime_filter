@@ -20,7 +20,7 @@ class Particles
         float size;
     };
 public:
-    Particles(int maxParticles,GLuint &m_vbo,GLuint &m_vao);
+    Particles(int maxParticles);
     Particles();
     void update(float deltaTime);
     void render(GLuint shader,

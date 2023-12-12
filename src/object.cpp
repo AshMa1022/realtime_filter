@@ -1,8 +1,14 @@
 #include "object.h"
 
+
+/**
+ * @brief Object::loadOBJ: this is the OBJ loader
+ * @param path:: in put path of the file
+ * @return :: whether the object file has been parsed correctly
+ */
 bool Object::loadOBJ(const char* path) {
-    std::vector<GLuint> vertexIndices, normalIndices,textureIndices;
-    std::vector<GLfloat> temp_vertices, temp_normals,temp_texture;
+    std::vector<GLuint> vertexIn, normalIn,textureIn; // store the vertex/normal/uv index in the face
+    std::vector<GLfloat> temp_vertices, temp_normals,temp_texture; // store the vertex/normal/uv coords
 
     std::ifstream in(path, std::ios::in);
     if (!in) {
@@ -41,30 +47,31 @@ bool Object::loadOBJ(const char* path) {
             while (std::getline(f, segment, ' ')) { // Split by space to get each vertex/texture/normal group
                 std::istringstream faceSegment(segment);
                 if (faceSegment >> vertexIndex >> slash >> textureIndex >> slash >> normalIndex) {
-                    vertexIndices.push_back(vertexIndex);
-                    textureIndices.push_back(textureIndex);
-                    normalIndices.push_back(normalIndex);
+                    vertexIn.push_back(vertexIndex);
+                    textureIn.push_back(textureIndex);
+                    normalIn.push_back(normalIndex);
                 }
             }
         }
     }
 
-    for (unsigned int i = 0; i < vertexIndices.size(); i++) { //push v,vn,vt base on the face indexing
-        GLuint vertexIndex = vertexIndices[i];
+    for (unsigned int i = 0; i < vertexIn.size(); i++) { //push v,vn,vt base on the face indexing
+        GLuint vertexIndex = vertexIn[i];
         GLfloat x = temp_vertices[3 * (vertexIndex-1)];
         GLfloat y = temp_vertices[3 * (vertexIndex-1) + 1];
         GLfloat z = temp_vertices[3 * (vertexIndex-1) + 2];
 
 
-        GLuint normalIndex = normalIndices[i];
+        GLuint normalIndex = normalIn[i];
         GLfloat nx = temp_normals[3 * (normalIndex-1)];
         GLfloat ny = temp_normals[3 * (normalIndex-1) + 1];
         GLfloat nz = temp_normals[3 * (normalIndex-1) + 2];
 
-        GLuint texturelIndex = textureIndices[i];
+        GLuint texturelIndex = textureIn[i];
         GLfloat tx = temp_texture[2 * (texturelIndex-1)];
         GLfloat ty = temp_texture[2 * (texturelIndex-1) + 1];
 
+        // push vertex & normal & texture coord in the same float vector so can be used later in rendering.
         out_vertices.push_back(x);
         out_vertices.push_back(y);
         out_vertices.push_back(z);

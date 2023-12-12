@@ -848,7 +848,6 @@
   /Users/ash/Desktop/CS1230/Realtime_filter/src/particle.h \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/realtime.h \
   /Users/ash/Desktop/CS1230/Realtime_filter/src/shaderloader.h \
-  /Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.h \
   /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp \
   /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/scenedata.h \
   /Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/sceneparser.h \

@@ -38,7 +38,7 @@ add_executable(${PROJECT_NAME}
     ../projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
     ../projects-realtime-AshMa1022/src/utils/scenedata.h ../projects-realtime-AshMa1022/src/utils/scenefilereader.cpp ../projects-realtime-AshMa1022/src/utils/scenefilereader.h ../projects-realtime-AshMa1022/src/utils/sceneparser.cpp ../projects-realtime-AshMa1022/src/utils/sceneparser.h
 src/settings.h src/settings.cpp
-src/sphere.h src/sphere.cpp
+
 src/particle.h src/particle.cpp
 
 

@@ -175,7 +175,7 @@ void Realtime::initializeGL() {
     bindObj(0,obj,obj_vertex,"/Users/ash/Desktop/CS1230/Realtime_filter/cakii.obj");
     bindObj(1,candle,candle_vertex,"/Users/ash/Desktop/CS1230/Realtime_filter/candle.obj");
 
-    part = Particles(100,m_vbos[3],m_vaos[3]);
+    part = Particles(100);
 
     std::vector<GLfloat> fullscreen_quad_data =
         { //     POSITIONS    //

@@ -439,12 +439,6 @@
 			null
 		],
 		[
-			"/Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.h",
-			"MU",
-			"UVLADIE3JM/moc_sphere.cpp",
-			null
-		],
-		[
 			"/Users/ash/Desktop/CS1230/projects-realtime-AshMa1022/src/utils/aspectratiowidget/aspectratiowidget.hpp",
 			"MU",
 			"SY2VK5D6SS/moc_aspectratiowidget.cpp",
@@ -577,11 +571,6 @@
 		],
 		[
 			"/Users/ash/Desktop/CS1230/Realtime_filter/src/settings.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/ash/Desktop/CS1230/Realtime_filter/src/sphere.cpp",
 			"MU",
 			null
 		],

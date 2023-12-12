@@ -15,7 +15,7 @@
 void MainWindow::initialize() {
 
     QLabel *backgroundLabel = new QLabel(this);
-    QPixmap backgroundPixmap("/Users/ash/Desktop/CS1230/Realtime_filter/resources/images/birth.JPG");
+    QPixmap backgroundPixmap("/Users/ash/Desktop/CS1230/Realtime_filter/resources/images/a.png");
     backgroundLabel->setPixmap(backgroundPixmap);
     backgroundLabel->setScaledContents(true); // Scale the image to fill the label
 
@@ -103,7 +103,7 @@ void MainWindow::initialize() {
     uploadFile = new QPushButton();
     uploadFile->setFont(font);
     uploadFile->setText(QStringLiteral("Upload Scene File"));
-    uploadFile->setStyleSheet("QPushButton { color : white; border: 1px solid white; }");
+    uploadFile->setStyleSheet("QPushButton { color : darkpink; background-color:white; border: 1px solid white; }");
 
 
 
@@ -207,26 +207,6 @@ void MainWindow::onUploadFile() {
     realtime->sceneChanged();
 }
 
-//void MainWindow::onSaveImage() {
-//    if (settings.sceneFilePath.empty()) {
-//        std::cout << "No scene file loaded." << std::endl;
-//        return;
-//    }
-//    std::string sceneName = settings.sceneFilePath.substr(0, settings.sceneFilePath.find_last_of("."));
-//    sceneName = sceneName.substr(sceneName.find_last_of("/")+1);
-//    QString filePath = QFileDialog::getSaveFileName(this, tr("Save Image"),
-//                                                    QDir::currentPath()
-//                                                        .append(QDir::separator())
-//                                                        .append("student_outputs")
-//                                                        .append(QDir::separator())
-//                                                        .append("action")
-//                                                        .append(QDir::separator())
-//                                                        .append("required")
-//                                                        .append(QDir::separator())
-//                                                        .append(sceneName), tr("Image Files (*.png)"));
-//    std::cout << "Saving image to: \"" << filePath.toStdString() << "\"." << std::endl;
-//    realtime->saveViewportImage(filePath.toStdString());
-//}
 
 
 

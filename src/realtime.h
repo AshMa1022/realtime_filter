@@ -14,9 +14,7 @@
 #include <QTimer>
 #include "camera.h"
 #include "object.h"
-#include "sphere.h"
 #include "particle.h"
-
 #include "shaderloader.h"
 #include "../projects-realtime-AshMa1022/src/utils/sceneparser.h"
 
@@ -79,8 +77,6 @@ private:
     GLuint m_defaultFBO;
     Object obj;
     Object candle;
-    Sphere sphere;
-    std::vector<GLfloat> sphere_vertex;
     std::vector<GLfloat> obj_vertex;
     std::vector<GLfloat> candle_vertex;
 
